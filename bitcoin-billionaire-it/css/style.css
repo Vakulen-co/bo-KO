@@ -1,0 +1,367 @@
+* {
+    outline: none !important;
+}
+
+.intl-tel-input {
+    width: 100%;
+}
+
+.f_form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.f_form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.f_form input {
+    border: 1px solid #bbb;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    padding: 10px;
+    width: 100%;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.f_form input.error {
+    border: 1px solid #f00;
+    font-size: 14px;
+}
+
+.f_form .intl-tel-input {
+    display: block;
+}
+
+.f_form .subscribeBtn {
+    background: #81dcff;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all .4s;
+    color: #fff;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.f_form .subscribeBtn:hover {
+    opacity: .7
+}
+
+.f_form .intl-tel-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.modalWindow {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 700;
+    background: transparent;
+    display: none;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.modalBg {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 700;
+    background: #0000009e;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 420px;
+    z-index: 707;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px 0;
+}
+
+.successPage .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-family: monospace;
+    font-size: 18px;
+    position: relative;
+    top: -60px;
+}
+
+/* ==================== PLACEHOLDER ======================= */
+
+.f_form input[placeholder] {
+    text-overflow: ellipsis;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.f_form input::-moz-placeholder {
+    text-overflow: ellipsis;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.f_form input:-moz-placeholder {
+    text-overflow: ellipsis;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.f_form input:-ms-input-placeholder {
+    text-overflow: ellipsis;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.f_form input:focus::-webkit-input-placeholder {
+    color: transparent;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.f_form input:focus::-moz-placeholder {
+    color: transparent;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.f_form input:focus:-moz-placeholder {
+    color: transparent;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.f_form input:focus:-ms-input-placeholder {
+    color: transparent;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* ===================== PRELOADER ======================== */
+
+.modalWindow.preloader {
+    z-index: 777777;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 70707;
+}
+
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 32px 32px;
+}
+
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -3px 0 0 -3px;
+}
+
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+    top: 50px;
+    left: 50px;
+}
+
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+    top: 54px;
+    left: 45px;
+}
+
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+    top: 57px;
+    left: 39px;
+}
+
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+    top: 58px;
+    left: 32px;
+}
+
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+    top: 57px;
+    left: 25px;
+}
+
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+    top: 54px;
+    left: 19px;
+}
+
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+    top: 50px;
+    left: 14px;
+}
+
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+    top: 45px;
+    left: 10px;
+}
+
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ========================= ONE SIGNAL ======================= */
+
+#onesignal-popover-container #onesignal-popover-dialog .popover-footer {
+    position: relative;
+    margin: .25em .25em 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#onesignal-popover-container #onesignal-popover-dialog .primary.popover-button+.secondary.popover-button {
+    margin-right: 0;
+}
+
+body #onesignal-popover-container #onesignal-popover-dialog .popover-body-message {
+    box-sizing: border-box;
+    padding: 0 .2em 0 1.286em;
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    line-height: 3.45em;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    color: #666 !important;
+    text-align: center;
+}
+
+.popover-body-icon {
+    display: none !important;
+}
+
+#onesignal-popover-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000c;
+}
+
+.onesignal-customlink-container {
+    position: fixed;
+    z-index: 33333;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000c7;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.onesignal-customlink-container .cnslBtn {
+    background: #fff;
+    padding: 10px;
+    font-size: 18px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px grey;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .1s;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.onesignal-customlink-container p.onesignal-customlink-explanation {
+    color: #fff;
+    font-size: 30px;
+    margin-top: -100px;
+}
+
+@media screen and (max-width: 640px) {
+    .top-footer .row {
+        margin: 0;
+    }
+    .corner .button {
+        margin: 65px 0 65px 20px;
+    }
+    .wrapper__mobile {
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px){
+    .play-btn {
+        opacity: 1 !important;
+        display: flex !important;
+    }
+}
+form .alterlink{
+    color: #81dcff !important;
+}
+#app{
+    margin: 0 !important;
+}
+video{
+    object-fit: cover;
+    max-width: 100%;
+}
+form .input-wrap{
+    margin: 7px 0 !important;
+}
+input:not([type=checkbox]){
+    height: 40px !important;
+    border: 1px solid #bbb !important;
+    border-radius: 0px !important;
+    padding: 10px !important;
+    width: 100% !important;
+    color: #000 !important;
+    box-sizing: border-box;
+}
+#heroSection .registerForm{
+    text-align: left !important;
+}
+input[type=checkbox], input[type=radio]{
+    margin: 0 5px 0 0 !important;
+}
+.vue-tel-input{
+    border: none !important;
+}
+button[type=submit]{
+    background: #81dcff;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all .4s;
+    color: #fff;
+    font-weight: 800;
+    font-size: 17px;
+}
+.offer_row {
+    margin-top: 10px;
+}
+.formWrapper {
+    max-width: 430px;
+}
+
+.f_form {
+    max-width: 430px;
+}
+
+.f_form .offer_row {
+    /*padding: 0;*/
+    text-align: left;
+    position: relative;
+    top: -10px;
+}
+
+.f_form .offer_row input {
+    display: inline-block;
+    width: auto;
+    float: left;
+    margin: 0;
+    margin-right: 5px;
+}
+
+input.js-oferta {
+    width: auto !important;
+    height: auto !important;
+    -webkit-appearance: checkbox !important;
+}
+
+.f_form .offer_row span {
+    font-size: 11px;
+    line-height: 14px;
+    font-family: sans-serif;
+    color: #333;
+    position: relative;
+    top: -1px;
+    display: block;
+}
+
+.f_form .offer_row a {
+    color: #333;
+}
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 100%;
+}
+body.unavailable {
+    pointer-events: none;
+    opacity: 0.5;
+}
