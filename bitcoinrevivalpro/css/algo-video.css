@@ -1,0 +1,24 @@
+.algo-video-container {
+    position: relative;
+    background-color: #e8ebf6;
+}
+
+.algo-video-container video {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.algo-video-container .algo-video-play-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background: url("../img/play-button.png") center no-repeat;
+    background-size: contain;
+}

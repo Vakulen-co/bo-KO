@@ -1,0 +1,254 @@
+@media all and (max-width: 1199px) and (min-width: 991px){
+    .container-fluid__wrap h1{
+        font-size: 46px;
+    }
+    .container-fluid__wrap p{
+        font-size: 29px;
+    }
+    .contact_us_page .intro-section h1 ,
+    .cookie_page .intro-section h1 ,
+    .policy_page .intro-section h1 ,
+    .terms-page .intro-section h1 ,
+    .login_page .intro-section h1 ,
+    .contact_us_page .intro-section h1 {
+        font-size: 60px;
+    }
+    .join-section{
+        background-position: 110% 100%;
+        background-size: 60%;
+    }
+    .v2 .form-container-unique .form-actions button,
+    .main-wrapper .main_container_wrap .form-container-unique .form-actions button{
+        font-size: 24px;
+    }
+    .login_page .still-section .btn-warning{
+        font-size: 32px;
+    }
+}
+
+@media all and (max-width: 991px){
+    .main-wrapper .main_container_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-wrapper .main_container_wrap .video-container{
+        padding-bottom: calc(90% / 1.775);
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .v2 .form-container-unique,
+    .main-wrapper .main_container_wrap .form-container-unique{
+        width: 100%;
+        max-width: 350px;
+    }
+    .oligarchs-section {
+        flex-wrap: wrap;
+    }
+    .btc-widget-block{
+        bottom: 60px !important;
+    }
+    header #uinames{
+        top: auto;
+        bottom: 40px;
+    }
+    header .exclusive-offer{
+        right: 0;
+    }
+    .contact_us_page .intro-section h1,
+    .cookie_page .intro-section h1,
+    .policy_page .intro-section h1,
+    .terms-page .intro-section h1,
+    .login_page .intro-section h1,
+    .contact_us_page .intro-section h1{
+         font-size: 6vw;
+     }
+}
+
+
+
+@media all and (max-width: 991px) and (min-width: 768px){
+    .container-fluid__wrap h1{
+        font-size: 36px;
+    }
+    .container-fluid__wrap p{
+        font-size: 24px;
+    }
+    .header .container{
+        max-width: 100%;
+    }
+    .join-section{
+        background-size: 50%;
+    }
+    .v2 .form-container-unique .form-actions button,
+    .main-wrapper .main_container_wrap .form-container-unique .form-actions button{
+        font-size: 24px;
+    }
+    .security-section .align-items-center{
+        flex-direction: column;
+    }
+    .oligarchs-section .oligarch_box{
+        width: 50%;
+    }
+    .section-ask .but2{
+        width: 400px;
+        font-size: 26px;
+    }
+    .login_page .still-section .btn-warning{
+        font-size: 26px;
+    }
+}
+@media all and (max-width: 767px){
+    .container-fluid__wrap h1{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .container-fluid__wrap p{
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .header .header-wrap {
+        flex-wrap: wrap;
+    }
+    .join-section{
+        background: 0 0;
+    }
+    .join-section .join-text{
+        padding:0 2% 20px;
+    }
+    .join-section .join-text h2{
+        font-size: 24px;
+    }
+    .join-section .join-text p{
+        width: 100%;
+    }
+    .v2 .form-container-unique .form-actions button,
+    .main-wrapper .main_container_wrap .form-container-unique .form-actions button{
+        font-size: 22px;
+    }
+    .oligarchs-section .oligarch_box{
+        width: 100%;
+    }
+    .v2-section .advantages__success,
+    .how_it_works .how_it_works__success{
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .section-ask .ask_container {
+        column-count: 1;
+    }
+    header .red-warning ,
+    header .exclusive-offer,
+    header #uinames{
+        display: none;
+    }
+    header .logo-box{
+        text-align: center;
+    }
+    .section-results .flx-table .flx-head{
+        display: none;
+    }
+    .section-results .flx-table .flx-body .flx-title{
+        display: block;
+    }
+    .section-results .flx-table .flx-body .flx-td{
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .flx-td > div {
+        width: 50%;
+    }
+    .flx-td p {
+        margin: 0;
+    }
+    .flx-title {
+        display: block;
+        text-align: right !important;
+        padding-right: 25px;
+        color: #333198;
+        font-weight: 800;
+    }
+    section.how_it_works .success_box{
+        margin: 0 auto 50px;
+    }
+    section.how_it_works .success_box:not(:last-of-type):after{
+       top: auto;
+        right: calc(50% - 15px);
+        bottom: -40px;
+        transform: rotate(90deg);
+    }
+}
+@media all and (max-width: 767px) and (min-width: 576px){
+    .header .header-wrap{
+        flex-direction: row-reverse;
+    }
+    .header .exclusive-offer{
+        right: 0;
+    }
+    .header #uinames{
+        margin-right: -24px;
+    }
+    .section-ask .but2{
+        width: 350px;
+        font-size: 22px;
+    }
+    .login_page .still-section .btn-warning{
+        font-size: 26px;
+    }
+}
+@media all and (max-width: 575px){
+    .header .exclusive-offer{
+        position: relative;
+        right: initial;
+    }
+    .header .header-wrap{
+        flex-direction: initial;
+    }
+    .header #uinames{
+        margin-top: 20px;
+    }
+    .main-wrapper .main_container_wrap .video-container{
+        padding-bottom: calc(100% / 1.775);
+        width: 100%;
+    }
+    .security-section .container .btc-list{
+        flex-direction: column;
+    }
+    section.how_it_works h2,
+    .section-results h2,
+    h2.oligarchs__title{
+        font-size: 20px;
+    }
+    h2.oligarchs__title:lang(da),
+    .section-results h2:lang(da){
+        font-size: 22px;
+    }
+    .v2 .form-container-unique .form-actions button,
+    .main-wrapper .main_container_wrap .form-container-unique .form-actions button{
+        font-size: 20px;
+    }
+    .security-section .align-items-center .text-center{
+        justify-content: space-around;
+    }
+    .section-ask .but2{
+        width: 300px;
+        font-size: 20px;
+    }
+    .login_page .still-section .btn-warning{
+        font-size: 24px;
+    }
+    .login_page .still-section h3,
+    .login_page .form-section h2{
+        font-size: 28px;
+    }
+    .login_page .still-section p,
+    .login_page .form-section h3{
+        font-size: 24px;
+    }
+    .form-container-unique .form_title{
+        font-size: 26px;
+    }
+}
