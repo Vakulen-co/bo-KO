@@ -1,0 +1,50 @@
+.modal {
+    display: block
+}
+
+.modal-leave {
+    border-radius: 1px !important
+}
+
+.modal-enter .modal-dialog,
+.modal-leave .modal-dialog {
+    opacity: 0;
+    transform: translateY(-30%)
+}
+
+.modal-enter .modal-backdrop,
+.modal-leave .modal-backdrop {
+    opacity: 0
+}
+
+.modal-backdrop.in {
+    opacity: .75
+}
+
+.error-modal {
+    text-align: left
+}
+
+.error-modal .modal {
+    z-index: 1053
+}
+
+.error-modal .modal-dialog {
+    z-index: 1053
+}
+
+.error-modal .modal-backdrop {
+    z-index: 1052
+}
+
+.robot-modal-static .modal {
+    z-index: 1051
+}
+
+.robot-modal-static .modal-dialog {
+    z-index: 1051
+}
+
+.robot-modal-static .modal-backdrop {
+    z-index: 1050
+}
