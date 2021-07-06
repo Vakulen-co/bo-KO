@@ -1,0 +1,71 @@
+body .disclaimer-wrapper {
+    padding: 25px 10px 10px;
+}
+
+body .join-us-text-2 {
+    display: none;
+}
+
+body .player-holder {
+    width: 100%;
+}
+
+p.form-disclaimers {
+    font-size: 11px;
+    margin: 0;
+}
+
+.logos-block {
+    padding: 70px 0 50px;
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti.iti--allow-dropdown .iti__selected-flag,
+.iti.iti--separate-dial-code .iti__selected-flag {
+    height: 2em !important;
+}
+
+.form-container {
+    padding: 20px 15px;
+}
+
+.form-holder .intgrtn-btn-submit {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: white;
+    background-image: linear-gradient(166deg, #156cff 1%, #0e49ff);
+    box-shadow: rgba(13, 13, 13, 0.43) 0px 4px 20.9px 3.1px;
+    text-transform: uppercase;
+    width: 90%;
+    height: 64px;
+    cursor: pointer;
+    white-space: normal;
+    text-align: center;
+    margin: 20px auto 0;
+    border-radius: 6px;
+}
+
+.form-holder .intgrtn-btn-submit:hover {
+    color: white;
+    background-image: linear-gradient(166deg, #156cff 1%, #0e49ff);
+    font-size: 21px;
+}
+
+.footer-disclaimer {
+    padding-top: 15px;
+}
+
+.footer-disclaimer p {
+    font-size: 12px;
+}
+
+span.error {
+    display: block;
+    color: #F44336;
+    text-align: right;
+    font-size: 12px;
+}
