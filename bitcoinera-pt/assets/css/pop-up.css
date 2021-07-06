@@ -1,0 +1,145 @@
+/*POPUP*/
+
+.hover-modal {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 10px;
+    z-index: 9999;
+}
+
+.popup_custom {
+    position: fixed;
+    z-index: 9997;
+    display: none;
+    height: 100%;
+    right: -20px;
+    left: -20px;
+}
+
+.popup_custom .popup_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: 9994;
+}
+
+.popup_custom .close_button {
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    cursor: pointer;
+    color: gray ! important;
+    z-index: 9995;
+    font-size: 80px;
+}
+
+.popup_custom .popup_inner .popup_content {
+    /*margin: 100px auto 0 auto;*/
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+}
+
+.popup_custom .popup_content_inner {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 9998;
+}
+
+.popup_custom .title {
+    color: #fa5258;
+    font-weight: bold;
+    font-style: italic;
+    /*font-size: 70px;*/
+    font-size: 24px;
+    font-family: sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    /*max-width: 660px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+}
+
+.popup_custom .subtitle {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #fff;
+    /*line-height: 1.2;*/
+    margin-bottom: 15px;
+    /*max-width: 660px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+}
+
+.popup_custom .subtitle b {
+    color: #f7931a;
+}
+
+.popup_custom .popup_form {
+    text-align: center;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+@media screen and (max-height:800px) {
+    .popup_custom .popup_inner .popup_content {
+        margin: 0px auto 0 auto;
+    }
+    .popup_custom .subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .popup_custom .title {
+        font-size: 34px;
+        margin-bottom: 0px;
+    }
+    label.error {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .popup_custom .registerBtn {
+        bottom: 7px;
+    }
+}
+
+/*end Popap*/
+
+.pop_pass {
+    width: 54%;
+}
+
+.popup-form-wrapper {
+    max-width: 50%;
+    margin: auto;
+}
+
+.btn-popup {
+    width: 40%;
+}
+
+.popup_custom .registerBtn {
+    bottom: 70px;
+}
+
+.form-block-2.whitee .checkboxStle {
+    margin-top: 50px;
+}
