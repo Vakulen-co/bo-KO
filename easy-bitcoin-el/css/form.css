@@ -1,0 +1,344 @@
+/*form*/
+
+form {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.form-body {
+    max-width: 500px;
+}
+
+
+/*Steps*/
+
+#security {
+    display: none;
+}
+
+#personal_phone {
+    display: none;
+}
+
+.main-form {
+    position: relative;
+    min-width: 500px;
+}
+
+input:not([type=checkbox]) {
+    height: 40px!important;
+    padding-left: 50px;
+    background-position-x: 15px!important;
+    background-color: #def7d8;
+
+}
+
+.form-tel {
+    display: inline-block;
+}
+
+.phone-hint {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    padding: 0 !important;
+}
+
+.phone {
+    padding-left: 90px !important;
+    /*width: calc(100% - 90px) !important;*/
+}
+
+/*valid*/
+
+#security label.error {
+    display: none ! important;
+}
+
+
+input.valid {
+    border: 1px solid #23B100;
+}
+
+input[type="text"] {
+    /* background:  15px  no-repeat url(../images/name.svg), #def7d8; */
+    background-image: url(../images/name.svg);
+    background-position-x: 30px;
+
+}
+
+input[type="email"] {
+    background: 15px center no-repeat url(../images/mail.svg), #def7d8;
+}
+
+input.valid.password {
+    background: 15px center no-repeat url(../images/password.svg), #def7d8;
+}
+
+
+
+.error:not(input):after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: #ffffff transparent transparent transparent;
+    top: 100%;
+    right: 4%;
+    margin-left: -10px;
+}
+
+.error:not(input) {
+    text-align: center;
+    color: #C40000;
+    font-size: 14px;
+    position: absolute;
+    width: 80%;
+    z-index: 999;
+    background: #FFFFFF;
+    bottom: 74%;
+    right: 17px;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px 5px rgba(0, 0, 0, 0.25);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#phone_footer-error.error:not(input),
+#phone-error.error:not(input) {
+    bottom: 96%;
+    right: 2px;
+}
+
+/*.gtm-popup-steps-land input{
+    background-color: #fff!important;
+}*/
+
+/*valid-pass*/
+
+.valid-block {
+    /*background: linear-gradient(to top, #fffffffa, #ffffff);*/
+    border-radius: 5px;
+}
+
+.valid-check {
+    padding-left: 20px;
+    margin: 1%;
+    list-style: none;
+    background-image: url(../images/pass-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    text-align: left;
+}
+
+.check label {
+    font-weight: 700;
+    color: #49c136 !important;
+    /*font-size: 11px;*/
+    padding: 2px;
+}
+
+
+
+.password.error:focus~.valid-check:not(.check)>label,
+.password.error~.valid-check:not(.check)>label {
+    color: #c70720 !important;
+    font-weight: 700;
+    /* font-size: 11px;*/
+    padding: 2px;
+}
+
+label {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2px;
+}
+
+/*input::placeholder{
+    font-size: 14px;
+}*/
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+    .inputForm {
+        font-size: 14px;
+    }
+    input::placeholder {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 420px) {
+    .inputForm {
+        font-size: 14px;
+    }
+    input::placeholder {
+        font-size: 13px;
+    }
+}
+
+.password-generate {
+    /*display: none;*/
+    position: absolute;
+    width: 70%;
+    top: 70px;
+    right: 5%;
+    background: #fff;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    z-index: 999;
+}
+
+.password-generate:after {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    top: -5px;
+    right: 5%;
+}
+
+.show-generator {
+    background: url('../images/generate-password.svg');
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 22px;
+    right: 8%;
+    cursor: pointer;
+}
+
+.password-generate__text {
+    color: #30234a;
+    margin-bottom: 2.5rem;
+}
+
+.password-generate__wrapper .password-generate__text .head-title {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.password-generate__text .body-text {
+    font-size: 1.2rem;
+}
+
+.password-generate__buttons .password-btn {
+    display: inline-flex;
+    justify-content: center;
+    min-height: 2.5rem;
+    border: 0;
+    color: #fff;
+    padding: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.password-generate__buttons .password-btn.password-btn__no {
+    width: 25%;
+    background: #a2a2a2;
+}
+
+.password-generate__buttons .password-btn.password-btn__yes {
+    width: 60%;
+    background: #9277FF;
+}
+
+.password-generate__buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.toggle-password-icon {
+    /*display: none;*/
+}
+
+.show-generator,
+.password-generate {
+    display: none;
+}
+
+/*preloader*****/
+
+.preloader {
+    display: none;
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000a3;
+    z-index: 999;
+}
+
+.preloader img {
+    width: 130px;
+    height: 130px;
+}
+
+.preloader .preloader-wrapper {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    background: #fff;
+    color: #30234a;
+    z-index: 2;
+    text-align: center;
+    /*bottom: 0;*/
+    top: 0;
+}
+
+.preloader-wrapper h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.preloader-wrapper h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.preloader-wrapper img {
+    margin-bottom: 15px;
+}
+
+.preloader-wrapper h3 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.preloader-wrapper .fail {
+    width: 70%;
+    margin: auto;
+}
+
+.preloader-wrapper button {
+    background: linear-gradient(180deg, #FFB900 0%, #D3B002 100%);
+    text-transform: uppercase;
+    font-weight: 900;
+    /*padding: 11px 27px;*/
+    padding: 4px;
+    border: 0;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.preloader .hide {
+    display: none;
+}
+
+form {
+    position: relative;
+}

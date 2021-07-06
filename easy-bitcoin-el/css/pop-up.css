@@ -1,0 +1,140 @@
+/*POPUP*/
+
+.hover-modal {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 10px;
+    z-index: 9999;
+}
+
+.popup_custom {
+    position: fixed;
+    z-index: 9997;
+    top: 0;
+    height: 100%;
+    right: -20px;
+    left: -20px;
+}
+
+.popup_custom .popup_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: 9994;
+}
+
+.popup_custom .close_button {
+    font-weight: lighter;
+    position: absolute;
+    right: 34px;
+    top: -16px;
+    cursor: pointer;
+    color: gray ! important;
+    z-index: 9995;
+    font-size: 64px;
+}
+
+.popup_custom .popup_inner .popup_content {
+    /*margin: 100px auto 0 auto;*/
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+}
+
+.popup_custom .popup_content_inner {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    z-index: 9998;
+}
+
+.popup_custom .title {
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 70px;
+    /*font-size: 24px;*/
+    font-family: sans-serif;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    /*max-width: 660px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+}
+
+.popup_custom .title b {
+    color: #d00000;
+}
+
+.popup_custom .subtitle {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #fff;
+    /*line-height: 1.2;*/
+    margin-bottom: 15px;
+    /*max-width: 660px;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+}
+
+.popup_custom .subtitle b {
+    color: #f7931a;
+}
+
+.popup_custom .popup_form {
+    text-align: center;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+@media screen and (max-height: 800px) {
+    .popup_custom .popup_inner .popup_content {
+        margin: 0px auto 0 auto;
+    }
+    .popup_custom .subtitle {
+        font-size: 28px;
+    }
+    .popup_custom .title {
+        font-size: 54px;
+    }
+}
+
+/*end Popap*/
+
+.row div.action-form_pop {
+    background: #EFECFF;
+    padding-bottom: 28px;
+    border-radius: 8px;
+}
+
+.popup-form-wrapper {
+    height: 466px;
+    width: 460px;
+    margin: auto;
+}
+
+.popup_custom .popup_content_inner {
+    max-height: 100vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.popup_custom .popup_content_inner::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
