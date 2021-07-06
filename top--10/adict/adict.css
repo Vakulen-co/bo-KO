@@ -1,0 +1,143 @@
+form input.err:focus,
+form input.err {
+    background-color: rgba(230, 25, 25, 0.3) !important;
+    color: white;
+}
+form input.valid:focus,
+form input.valid {
+     background-color: rgba(25, 230, 25, 0.3) !important;
+     color: white;
+ }
+.modal-open {
+    overflow: scroll;
+    display: block;
+}
+.exit_popup,
+.cookie-policy {
+    display: none;
+}
+.cookie-policy.active {
+    display: block;
+}
+input,button {
+    outline: none;
+}
+.pops{
+    cursor: pointer;
+}
+.exit_popup {
+    background: rgba(255,255,255,.6);
+}
+ input[name="phone"]{
+    padding-left: 93px  !important;
+}
+.help-block-error {
+    line-height: 1;
+    margin: 0 0px 11px;
+    text-align: left;
+    background-color: red;
+    color: #fff;
+}
+.form-registration .intgrtn-form-signup input[name="phone"]{
+    padding-left: 94px!important;
+}
+.form-container-unique .form-group .help-block.block {
+    display: block;
+}
+.valid::-webkit-input-placeholder,
+.err::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+.valid::-moz-placeholder,
+.err::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+}
+.valid:-ms-input-placeholder,
+.err:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+}
+.valid:-moz-placeholder,
+.err:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+}
+
+.video-insert {
+    position: relative;
+    height: auto!important;
+}
+.play-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.play-btn:before {
+    content: '';
+    display: block;
+    width: 24%;
+    background: url(play.png);
+    height: 48%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+    .play-btn:before {
+        display: none;
+        opacity: 0;
+    }
+}
+.play .play-btn:before {
+    opacity: 0;
+}
+.pop-outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 97;
+    display: none;
+}
+.pop-outer.active {
+    display: flex;
+}
+.pop-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 99;
+}
+.pop-inner {
+    height: 80%;
+    position: relative;
+    z-index: 101;
+    background: #fff;
+    max-width: 80%;
+}
+.pop-inner__in {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 40px 0 40px;
+}
+.pop-close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+}

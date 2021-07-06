@@ -1,0 +1,70 @@
+
+.inputContainer.error {
+    border-color: #e85454;
+}
+
+.inputContainer .message {
+    color: #FF5C5C;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    line-height: 1.2;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border-radius: 0;
+    z-index: 16;
+    text-align: left;
+    left: 0;
+
+    color:#f04b19;
+    background-color: #fff;
+    line-height: 1.1;
+    font-size: 1rem;
+
+}
+.inputContainer .message :after{
+    font-family: 'icomoon';
+    content: "\e900";
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 50%;
+    transform:translateY(-50%);
+    font-size: 1.38rem;
+}
+/* .modal .modal__form__body .inputContainer .message {
+    right: 9px;
+    left: 9px;
+    border-radius: 0;
+}
+.modal .modal__form__body .inputContainer .message  .message__text{
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+.inputContainer .message__text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    padding-left: 10px;
+    padding-right: 35px;
+    transform:translateY(-50%);
+}
+.inputContainer.error .message {
+    right: 0;
+    
+}
+/* .modal .modal__form__body .inputContainer.error .message {
+    right: 9px;
+    
+} */
+
+.inputContainer.error label {
+    background: #FF5C5C;
+    border-color: #e85454;
+}
+.inputContainer.error input,
+.inputContainer.error textarea {
+    color: #FF5C5C;
+}

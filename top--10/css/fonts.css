@@ -1,0 +1,164 @@
+
+
+@font-face {
+    font-family: 'AgencyFB';
+    src: url('../fonts/ufonts_com_agencyfbboldsubset.eot');
+    src: url('../fonts/ufonts_com_agencyfbboldsubset.eot') format('embedded-opentype'),
+         url('../fonts/ufonts_com_agencyfbboldsubset.woff2') format('woff2'),
+         url('../fonts/ufonts_com_agencyfbboldsubset.woff') format('woff'),
+         url('../fonts/ufonts_com_agencyfbboldsubset.ttf') format('truetype'),
+         url('../fonts/ufonts_com_agencyfbboldsubset.svg#ufonts_com_agencyfbboldsubset') format('svg');
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Utsaah";
+    src: url('../fonts/ufonts_com_utsaah-webfont.eot');
+    src: url('../fonts/ufonts_com_utsaah-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts_com_utsaah-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts_com_utsaah-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: "Utsaah";
+    src: url('../fonts/ufonts_com_utsaah-bold-webfont.eot');
+    src: url('../fonts/ufonts_com_utsaah-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts_com_utsaah-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts_com_utsaah-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AgencyFB';
+    src: url('../fonts/ufonts_com_agencyfb_1_subset.eot');
+    src: url('../fonts/ufonts_com_agencyfb_1_subset.eot') format('embedded-opentype'),
+         url('../fonts/ufonts_com_agencyfb_1_subset.woff2') format('woff2'),
+         url('../fonts/ufonts_com_agencyfb_1_subset.woff') format('woff'),
+         url('../fonts/ufonts_com_agencyfb_1_subset.ttf') format('truetype'),
+         url('../fonts/ufonts_com_agencyfb_1_subset.svg#ufonts_com_agencyfb_1_subset') format('svg');
+    font-weight: 400;
+} 
+
+
+@font-face {
+    font-family: 'FamiliarPro';
+    src: url('../fonts/familiar_pro-bold-webfont.eot');
+    src: url('../fonts/familiar_pro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/familiar_pro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/familiar_pro-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Euphemia';
+  src: url('../fonts/subset-EuphemiaCAS.eot');
+  src: url('../fonts/subset-EuphemiaCAS.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/subset-EuphemiaCAS.woff2') format('woff2'),
+    url('../fonts/subset-EuphemiaCAS.woff') format('woff'),
+    url('../fonts/subset-EuphemiaCAS.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?o0yjud');
+  src:  url('../fonts/icomoon.eot?o0yjud#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?o0yjud') format('truetype'),
+    url('../fonts/icomoon.woff?o0yjud') format('woff'),
+    url('../fonts/icomoon.svg?o0yjud#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-down:before {
+  content: "\e908";
+}
+.icon-globe:before {
+  content: "\e910";
+}
+.icon-arrow-down:before {
+  content: "\e901";
+}
+.icon-arrow-up:before {
+  content: "\e904";
+}
+.icon-notification:before {
+  content: "\e900";
+}
+.icon-warning:before {
+  content: "\e900";
+}
+.icon-notice:before {
+  content: "\e900";
+}
+.icon-note:before {
+  content: "\e900";
+}
+.icon-exclamation:before {
+  content: "\e900";
+}
+.icon-right-arrow-angle:before {
+  content: "\e911";
+}
+.icon-user:before {
+  content: "\e905";
+}
+.icon-lock:before {
+  content: "\e906";
+}
+.icon-play:before {
+  content: "\e907";
+}
+.icon-envelope:before {
+  content: "\e90b";
+}
+.icon-close:before {
+  content: "\e90c";
+}
+.icon-checked:before {
+  content: "\e90e";
+}
+.icon-left-direction-arrow2:before {
+  content: "\e90f";
+}
+.icon-right-direction-arrow2:before {
+  content: "\e90d";
+}
+.icon-left-direction-arrow:before {
+  content: "\e909";
+}
+.icon-right-direction-arrow:before {
+  content: "\e90a";
+}
+.icon-attantion-triangle:before {
+  content: "\e902";
+}
+.icon-shield:before {
+  content: "\e903";
+}
