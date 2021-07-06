@@ -1,0 +1,267 @@
+@media(max-width: 1200px) {
+    .baner h2, #section-simple .title{
+        font-size: 2em;
+    }
+    .baner p{
+        font-size:1.5em;
+    }
+    
+    .contactForm {
+	padding: 8px 15px;
+    }
+
+    .contactForm .form_header h3{
+        font-size:1.5em;
+    }
+    
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm textarea{
+        height:39px;
+    }
+    .contactForm .btn-submit, .btn {
+        padding:12px 12px;
+    }
+    
+    .step-2-form{
+        margin:155px 15px 0 0;
+    }
+    
+}
+
+
+@media(max-width: 992px) {
+    .baner h2, #section-simple .title{
+        font-size: 1.7em;
+    }
+    .baner p{
+        font-size:1.4em;
+    }
+    
+    .contactForm {
+	padding: 5px 12px;
+    }
+    .contactForm .form_header{
+        margin:0 0 10px 0;
+        font-size:0.8em;
+        line-height:1.2em;
+    }
+
+    .contactForm .form_header h3{
+        font-size:1.3em;
+    }
+    .contactForm .input_group{
+        margin-bottom:4px;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm textarea{
+        height:32px;
+        padding: 2px 10px;
+    }
+    .contactForm .btn-submit, .btn {
+        padding:10px 10px;
+        white-space:normal;
+        line-height:1.3em;
+    }
+    
+    
+    .permissions-header h3{
+        font-size: 1.8em;
+    }
+    
+    .step-2-calc{
+        width:100%;
+    }
+    .step-2-form{
+        width:100%;
+        float:none;
+        clear:both;
+        margin:20px auto 30px auto;
+        max-width:400px;
+    }
+    #home-step-2 .step-2-form{
+        border:none;    
+    }
+    #home-step-2 .step-2-form .contactForm{    
+        box-shadow:none;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .logo {
+        height:70px;
+    }
+    .logo img{
+        margin:5px 0;
+    }
+    .header-text{        
+        margin:16px 15px 0 0;
+    }
+    .header-text br{        
+        display:block;
+    }
+    .header-button{        
+        margin:25px 15px 0 0;
+    }
+    
+    .baner{
+        padding:140px 15px 30px 15px;
+        text-align:center;
+    }
+
+    .baner h2, #section-simple .title{
+        font-size: 1.5em;
+    }
+    .baner p{
+        font-size:1.2em;
+    }
+    
+    .baner-video{
+        margin:0 0 30px 0;
+        padding:51.5% 0 0 0;
+    }
+    .baner-video iframe{
+        width:calc(100% - 30px);
+        left:15px;
+    }
+    
+    .form_to_step2{
+        width:calc(100% - 30px);
+        margin:0 0 40px 15px;
+    }
+    
+    .contactForm{
+        width:100%;
+        padding:30px 20px;
+        margin-top:40px;
+    }  
+    .contactForm .form_header{
+            font-size:1em;
+    }
+    .contactForm .form_header h3{
+        font-size:1.5em;
+    }   
+    .contactForm .input_group {
+        margin-bottom: 8px;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm textarea{
+            height: 50px;
+            padding: 6px 16px;
+    }
+    .contactForm .btn-submit{
+        padding: 20px 30px;
+    }
+    
+    
+    .permissions-header h3{
+        font-size: 1.7em;
+        text-align:center;
+    }
+    
+     
+    
+    #about {
+        padding:80px 0 40px 0;
+    }
+    #about td{
+        display:block;
+        width:100%;
+    }
+    .img-td{
+        padding-right:0;
+    }
+    .permissions{
+        margin:40px 0 0 0;
+    }
+    
+    .about-us-box .about-text{
+        padding:0;
+    }
+    .link_policy{
+        margin:5px 0 0 0;
+        text-align:center;
+        padding-left:0px;
+    }
+    
+    section.calculator{
+        padding-bottom:0 !important;
+    }
+    .step-2-form{
+        margin:0px auto 0px auto;
+    }
+}
+
+@media(max-width: 560px){    
+    .connect-iframe{
+        height:1500px;    
+    }
+}
+
+@media(max-width: 480px) {
+    
+    .baner h2, #section-simple .title{
+        font-size: 1.3em;
+    }
+    .baner p{
+        font-size:1.05em;
+    }
+    .baner ul{
+        line-height:1.3em;
+    }
+    
+    .contactForm .form_header h3{
+        font-size:1.3em;
+    }
+    .contactForm .form_header{
+        font-size:1em;
+    }
+    
+    .permission-body, .permissions-header p{
+        font-size:1em;
+    }
+    .permissions-header h3{
+        font-size: 1.5em;
+    }
+    .permission-title{
+        font-size: 1.2em;
+    }
+    
+    .form_to_step2 .input_name, .form_to_step2 .input_email, .form_to_step2 .input_submit{
+        width:90%;
+        margin:20px 0 0 5%;
+    }
+    
+    .step-2-img-header h3{
+        font-size:1.2em;
+    }
+    .step-2-img-header br{
+        display:none;
+    }
+       
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm textarea{
+            height: 42px;
+    }
+    
+    #section-simple .container{
+        padding-top:40px;
+    }
+    
+    .calculate_head{
+        font-size:2rem !important;
+    }
+    .calculate_after_head{
+        font-size:1.4rem !important;
+    }
+    .calculate .calculate_range_wrap .range_item .item_head .head_name{
+        font-size:1.3rem !important;
+    }
+    .calculate .calculate_total .total_head{
+        font-size:2rem !important;
+    }
+}

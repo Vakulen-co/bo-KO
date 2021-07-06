@@ -1,0 +1,198 @@
+.contactForm {
+        position:relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0 0;
+	padding: 13px 20px;
+        border-radius: 4px;
+        color:#3c4d6b;
+        transition: all 0.3s ease 0s;
+        /*box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);*/
+}
+.contactForm .form_header{
+	color: #778191;
+        margin:0 0 20px 0;
+        font-size:1em;
+}
+.contactForm .form_header h3{
+    font-size: 1.7em;
+    padding:0;
+    margin:0 0 7px 0;
+    color:#3c4d6b;
+    font-weight:600;
+}
+.contactForm .form_header b{
+    font-size:1.4em;
+}
+
+
+.contactForm .contact_form {
+	padding: 0;
+	position: relative;
+        display:inline-block;
+	background: transparent;
+	text-align: center;
+}
+
+.contactForm .input_group {
+    position:relative;
+    width: 100%;
+    padding: 0;
+    float: left;
+    margin-bottom: 8px;
+}
+
+.contactForm .input_group:last-child {
+	margin-bottom: 0;
+}
+
+.input_questions label{
+    width:100%;
+    font-weight:300;
+    text-align:left;
+}
+
+.contactForm input[type="text"], .step2_form input[type="text"],
+.contactForm input[type="email"], .step2_form input[type="email"],
+.contactForm textarea, .contactForm select{
+        display:block;
+        float:left;
+	width: 100%;
+        height: 50px;
+        padding: 6px 16px;
+        line-height: 1.42857143;
+        color: #555;
+        background-image: none;
+        background-color: #fff;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+        margin-bottom: 0;
+        border: 2px solid #e6ecef;
+        transition: all 0.3s ease 0s;
+        z-index:1;
+}
+.contactForm select{
+    padding:6px 8px;
+    height:36px;
+    color:#778191;
+}
+.contactForm select option{
+    color:#555;
+}
+
+.intl-tel-input{width:100%;}
+.flag-container{z-index:2;color:#2e3346;}
+
+.contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
+.contactForm textarea:focus,
+.contactForm select:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+.contactForm input::-webkit-input-placeholder {color:#778191 !important; opacity:1;}
+.contactForm input::-moz-placeholder          {color:#778191 !important; opacity:1;}/* Firefox 19+ */
+.contactForm input:-moz-placeholder           {color:#778191 !important; opacity:1;}/* Firefox 18- */
+.contactForm input:-ms-input-placeholder      {color:#778191 !important; opacity:1;}
+.contactForm input:placeholder      {color:#778191 !important; opacity:1;}
+
+.error_input{
+    border:1px solid rgba(255,0,0,0.8) !important;
+}
+/*
+.contactForm .btn-submit, .btn {
+    display: block;
+    width: 100%;
+    color:#fff;
+    background-color: #2b81c1;
+    border-radius: 2px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: none;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+.contactForm .btn-submit:hover, .btn:hover {
+    color:#fff;
+    background-color: #1bbb20 !important;
+}
+.contactForm .btn-submit:focus, .btn:focus {
+    color: #fff;
+    opacity:0.9;
+    background-color:#159c19 !important;
+}
+.contactForm .btn-submit:active, .btn:active {
+    color: #fff;   
+    opacity:0.9;
+    background-color:#05a00a!important;
+}*/
+
+.form_error{    
+    display:none;
+    position:relative;
+    background:#fcf8f8;
+    padding:6px 12px 6px 35px !important;
+    text-align:left;
+    margin:0 0 25px 0;
+    border:1px dashed #a94442;
+}
+.form_error:after{
+    content:"!";
+    position:absolute;
+    left:5px;
+    top:4px;
+    font-size:1.2em;
+    line-height:25px;
+    bottom:0;
+    font-weight:bold;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background:#f9dcdc;
+    text-align:center;
+}
+.form_error p{
+    margin:0;
+    color:#a94442;
+    font-size:14px;
+    text-transform:none;
+    font-weight:300;
+}
+
+.sms_confirm_block{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items: center;
+    background:rgba(0,0,0, 0.9);
+    color:#fff;
+    z-index:5;
+    text-align:center;
+    padding:20px;
+    border-radius:5px;
+}
+.sms_confirm_title, .glass p.sms_confirm_title{
+    display:inline-block;
+    width:90%;
+    font-size:1.1em;
+    margin:0 0 15px 0;
+    color:#fff;
+}
+
+.sms_confirm_block input{
+    text-align:center;
+    margin:10px auto;
+}
+
