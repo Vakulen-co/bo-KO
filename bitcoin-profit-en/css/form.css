@@ -1,0 +1,685 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: local('Roboto Black'), local('Roboto-Black'), url(../fonts/Roboto-Black.ttf) format('truetype');
+}
+
+.phoneInfo h5,
+.phoneInfo h6,
+.phoneInfo p {
+    margin: 10px 0;
+}
+
+#myform3 .phoneInfo {
+    text-align: left;
+}
+
+/*
+* Custom form
+*/
+
+.step-counter {
+    padding-left: 0;
+}
+
+.form-container {
+    max-width: 550px;
+    width: 100%;
+    padding: 20px 15px;
+    /*border-radius: 30px;*/
+    /*background: #402f63;*/
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);*/
+    margin: auto;
+}
+
+.form-logo__wrapper {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.form-header {
+    line-height: 38px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+
+.form-header__h1 {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.color_orange {
+    font-weight: 900;
+    color: #d65000;
+}
+
+.form-header__h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.step-counter {
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    z-index: 1;
+    counter-reset: step;
+    position: relative;
+}
+
+.step-counter,
+.step-counter .step_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-counter .step_block {
+    float: left;
+    width: 33.33%;
+    position: relative;
+    text-align: center;
+}
+
+/*ADD STEPS NUMBERS AND STYLE THEM*/
+
+.step-counter .step_block:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    line-height: 26px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*ADD STEPS NUMBERS AND STYLE THEM END*/
+
+/*ADD PROGRESS BAR AND STYLE*/
+
+.step-counter .step_block:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #333;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+
+.step-counter .step_block:first-child:after {
+    content: none;
+}
+
+/*GREEN CURRENT STEP START*/
+
+.step-counter .step_block.active+.step_block:after {
+    background: #52bce6;
+}
+
+.step-counter .step_block.active:before {
+    content: url("../images/form/current-step.svg");
+    border-color: #52bce6;
+    background: #52bce6;
+    color: white
+}
+
+/*GREEN CURRENT STEP END*/
+
+/*ADD PROGRESS BAR AND STYLE END*/
+
+/*.form-fields__wrapper {*/
+
+/*margin-bottom: 10px;*/
+
+/*}*/
+
+.field-step {
+    display: none;
+}
+
+fieldset.step-1 {
+    display: block;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-top: 10px;
+}
+
+.field-step .input-wrapper input::placeholder,
+.field-step .input-wrapper input {
+    font: normal 18px inherit;
+    color: #333;
+}
+
+.field-step .input-wrapper input {
+    width: 100%;
+    height: 52px;
+    padding: 0 13% 0 45px;
+    border: 0;
+    /*background: #fff;*/
+    border: 1px solid #333;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+/*PLACEHOLDER INPUT ANIMATION TO TOP*/
+
+.form-input:focus~.floating-label,
+.form-input:not(:focus):valid~.floating-label {
+    top: 5px;
+    bottom: 10px;
+    left: 50px;
+    font-size: 11px;
+    opacity: 1;
+    color: #52bce6;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 52px;
+    top: 18px;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease font-size, 0.3s ease color;
+    color: #333;
+}
+
+/*PLACEHOLDER INPUT ANIMATION TO TOP END*/
+
+button[type=submit] {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 20px;
+    display: block;
+    height: 52px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    background-color: #2ba6df;
+    border-color: #2ba6df;
+    box-shadow: 0 2px 0 #1978a5;
+    -webkit-transition: 0.3s ease color, 0.5s ease background;
+    -moz-transition: 0.3s ease color, 0.5s ease background;
+    -ms-transition: 0.3s ease color, 0.5s ease background;
+    -o-transition: 0.3s ease color, 0.5s ease background;
+    transition: 0.3s ease color, 0.5s ease background;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.field-step .form-button__next[type=submit]:hover {
+    background: #52bce6;
+    color: #fffbf0;
+}
+
+.statistics {
+    position: relative;
+    width: 100%;
+    padding-bottom: 225px;
+    background: #f8f8f8;
+}
+
+.statistics .form-wrap {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+/*HINTS START*/
+
+.intl-tel-input .flag-container {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.error:not(input) {
+    position: absolute;
+    background: #fff;
+    width: 54%;
+    z-index: 999;
+    bottom: 90%;
+    right: 0;
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #C40000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.error:not(input):after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+}
+
+.error:not(input):after {
+    border-color: #ffffff transparent transparent transparent;
+    top: 100%;
+    right: 9%;
+    margin-left: -10px;
+}
+
+/*PASSWORD STEP*/
+
+.field-step .input-wrapper input.password {
+    padding-right: 20%;
+}
+
+.valid-check {
+    font-weight: 300;
+    padding-left: 15px;
+    margin: 1%;
+    list-style: none;
+    background-image: url(../images/form/password_hints_false.svg);
+    -webkit-background-size: 15px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left 50%;
+    -webkit-transition: background-image ease .3s;
+    -moz-transition: background-image ease .3s;
+    -ms-transition: background-image ease .3s;
+    -o-transition: background-image ease .3s;
+    transition: background-image ease .3s;
+    text-align: left;
+}
+
+.valid-check.check {
+    background-image: url(../images/form/password_hints_true.svg);
+}
+
+.phone-hint {
+    display: flex;
+}
+
+/*.check {*/
+
+/*background-image: url(../images/form/check_pass-icon.png);*/
+
+/*}*/
+
+/*.valid-check label {*/
+
+/*color: #f7f8fa !important;*/
+
+/*padding: 2px;*/
+
+/*font-weight: 700;*/
+
+/*font-size: 11px;*/
+
+/*!*    line-height: 17px;*!*/
+
+/*!*    display: list-item;*!*/
+
+/*}*/
+
+.valid-check label {
+    color: #000 !important;
+    font-size: 14px;
+    padding: 2px;
+    line-height: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.valid-check.check label {
+    color: #23B100 !important;
+}
+
+.password.error:focus~.valid-check:not(.check)>label,
+.password.error~.valid-check:not(.check)>label {
+    color: red !important;
+}
+
+.input-wrapper .password-generate {
+    /* display: none; */
+    position: absolute;
+    width: 90%;
+    top: 70px;
+    right: 10%;
+    background: #e5e5e5;
+    padding: 10px;
+    text-align: center;
+}
+
+.password-generate:after {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #c5c5c5;
+    position: absolute;
+    top: -5px;
+    right: 5%;
+}
+
+.password-generate__wrapper {
+    width: 75%;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .show-generator {
+        right: 16% !important;
+    }
+}
+
+.password-btn__yes {
+    width: 75% !important;
+}
+
+.password-btn__no {
+    width: 20% !important;
+}
+
+.password-generate__wrapper {
+    width: 100%;
+}
+
+.show-generator {
+    background: url('../images/form/generate-password.svg');
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    right: 13%;
+    cursor: pointer;
+}
+
+.password-generate__text {
+    color: #30234a;
+    margin-bottom: 25px;
+}
+
+.password-generate__text .head-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.password-generate__text .body-text {
+    font-size: 12px;
+}
+
+.password-generate__buttons .password-btn {
+    display: inline-flex;
+    justify-content: center;
+    min-height: 25px;
+    border: 0;
+    color: #333;
+    padding: 7px;
+}
+
+.password-btn__no {
+    width: 30%;
+    background: #a2a2a2;
+}
+
+.password-btn__yes {
+    color: #fff;
+    width: 65%;
+    background-color: #2ba6df;
+    border-color: #2ba6df;
+    box-shadow: 0 2px 0 #1978a5;
+    -webkit-transition: 0.3s ease color, 0.5s ease background;
+    -moz-transition: 0.3s ease color, 0.5s ease background;
+    -ms-transition: 0.3s ease color, 0.5s ease background;
+    -o-transition: 0.3s ease color, 0.5s ease background;
+    transition: 0.3s ease color, 0.5s ease background;
+}
+
+/*PASSWORD STEP END*/
+
+/*HINTS END*/
+
+.phone {
+    padding-left: 115px !important;
+    padding-right: 20% !important;
+}
+
+.selected-flag {
+    /*box-shadow: inset 0px 0px 0px 50px #2ba6df,*/
+    /*-1px -2px 0 #2ba6df,*/
+    /*-1px 2px 0 #2ba6df;*/
+    color: #333;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    margin-right: 6px;
+}
+
+.phone-hint {
+    color: #333;
+    /*padding: 0 30px;*/
+    margin-top: 25px;
+}
+
+.phone-hint h5 {
+    font-weight: 700;
+}
+
+.phone-hint h6 {
+    color: #d65000;
+}
+
+.phone-hint p {
+    font-size: 16px;
+}
+
+.color_white {
+    color: #333;
+}
+
+.form-free_places__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-place__text {
+    font-size: 25px;
+}
+
+.free-place__text.color_orange {
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.form-free_places__wrapper .oil-branch {
+    content: url("../images/form/free_access.svg");
+}
+
+.step-2 .free-place__text,
+.step-3 .free-place__text {
+    font-weight: 300;
+}
+
+/*
+* Custom form
+*/
+
+/*preloader*****/
+
+.preloader {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000a3;
+    z-index: 999;
+}
+
+.preloader img {
+    width: 130px;
+    height: 130px;
+}
+
+.preloader .preloader-wrapper {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    background: #fff;
+    color: #30234a;
+    z-index: 2;
+    text-align: center;
+}
+
+.preloader-wrapper h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.preloader-wrapper h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.preloader-wrapper img {
+    margin-bottom: 15px;
+}
+
+.preloader-wrapper h3 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.preloader-wrapper .fail {
+    width: 70%;
+    margin: auto;
+}
+
+.preloader-wrapper button {
+    background: #52bce6;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 11px 27px;
+    border: 0;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.preloader .hide {
+    display: none;
+}
+
+input {
+    outline: 0;
+}
+
+.form-input {
+    background: #fff url(../images/input.png) no-repeat 40px 480px;
+    background-size: 52px;
+}
+
+.form-input.error {
+    background-image: url(../images/input.png), /*no-repeat 40px 480px,*/
+    url(../images/form/error-pass_icon.svg);
+    background-size: 52px, 20px;
+    background-repeat: no-repeat, no-repeat;
+    /*box-shadow: inset 0px 0px 10px 0px red;*/
+    border: 1px solid red !important;
+}
+
+[name="first_name"],
+[name="last_name"] {
+    background-position: 0 2px, 95% 50%;
+}
+
+[name="email"] {
+    background-position: 0 -207px, 95% 50%;
+}
+
+[name="password"] {
+    background-position: 0 -260px, 95% 50%;
+}
+
+.phone.error {
+    background-image: url(../images/form/error-pass_icon.svg) !important;
+    background-size: 20px !important;
+    background-position: 95% 50%;
+}
+
+[name="first_name"]:focus,
+[name="last_name"]:focus {
+    background-position: 0 -310px, 95% 50%;
+}
+
+[name="email"]:focus {
+    background-position: 0 -519px, 95% 50%;
+}
+
+[name="password"]:focus {
+    background-position: 0 -572px, 95% 50%;
+}
+
+.field-step .input-wrapper input.valid {
+    border: 1px solid green;
+}
+
+li.step_block.done:before {
+    background: green;
+    color: #fff;
+    border-color: #0eb10e;
+}
+
+.step-counter .step_block.active:after,
+.step-counter .step_block.done:after {
+    background: green;
+}
+
+label[for="password"].error,
+label[for="password2"].error,
+label[for="password3"].error {
+    display: none !important;
+}
+
+.country-list {
+    color: #000;
+}
