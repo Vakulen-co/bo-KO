@@ -1,0 +1,65 @@
+.up_sound {
+    text-align: center;
+    display: none;
+    width: 166px;
+    height: 38px;
+    cursor: pointer;
+    position: absolute;
+    top: 18%;
+    right: 38%;
+    bottom: 0;
+    z-index: 5;
+    color: #fff;
+    background-color: #000;
+    padding-top: 3px;
+    font-size: 21px;
+}
+#volume_up {
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+    right: 37%;
+    width: 24%;
+    display: none;
+    cursor: pointer;
+}
+
+.anticlicker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+#apYou {
+    position: absolute;
+    width: 12%;
+    bottom: 41%;
+    right: 43%;
+}
+
+.videoWrapper {
+    background: #000;
+}
+
+.preloader {
+    display: none;
+    background: white;
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    z-index: 1061;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.5;
+}
+
+form {
+    position: relative;
+}
+
