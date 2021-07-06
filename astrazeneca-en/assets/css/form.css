@@ -1,0 +1,424 @@
+.form {
+    box-sizing: border-box;
+    padding: 13px 18px 20px;
+    color: #fff;
+    position: relative
+}
+
+.form--controlWrapper {
+    margin-bottom: 20px;
+    position: relative
+}
+
+.form--controlWrapper-half {
+    width: calc(50% - 5px)
+}
+
+.form--title {
+    text-align: center;
+    color: #fafaff;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 140%;
+    text-transform: uppercase
+}
+
+.form--title-yellow {
+    color: #f1ba2d
+}
+
+.form--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.form--input {
+    width: 100%;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 40px;
+    color: #333;
+    background-color: transparent;
+    padding: 12px 30px 12px 10px;
+    text-overflow: ellipsis;
+    outline-style: none
+}
+
+.checkbox-svg p {
+    color: #333
+}
+
+.form--input:focus {
+    box-shadow: 0 0 12px 5px rgba(66, 232, 224, .25)
+}
+
+.form--floatingLabel {
+    position: absolute;
+    z-index: 1;
+    transition: .3s ease all;
+    font-size: 10px;
+    line-height: 10px;
+    font-style: italic;
+    pointer-events: none;
+    left: 10px;
+    top: -11px;
+    padding: 1px 3px;
+    background-color: #c36;
+    outline-style: none
+}
+
+.form--input:placeholder-shown:not(:focus)~.form--floatingLabel {
+    top: 1em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(32, 32, 32, .5);
+    background-color: transparent
+}
+
+.form--row-pass {
+    justify-content: center
+}
+
+.form--row-pass label.error {
+    display: none !important
+}
+
+.password {
+    width: 55%;
+    border-radius: 3px 0 0 3px
+}
+
+.form--btnPasword {
+    width: 45%;
+    border-radius: 0 3px 3px 0;
+    box-sizing: border-box;
+    height: 40px;
+    border: none;
+    outline-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    font-family: inherit;
+    border: 2px solid #c36;
+    background-color: #fff;
+    transition: color .5s ease, background .5s ease;
+    color: #c36;
+    white-space: normal;
+    padding: 0 3px
+}
+
+.form--btnPasword:hover {
+    color: #fff;
+    background-color: transparent;
+    background-color: #c36
+}
+
+.form--btn {
+    width: 100%;
+    height: 60px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #c36
+}
+
+body {
+    overflow: hidden visible
+}
+
+.preloader {
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    z-index: 9995;
+    background-image: url(../images/preloader.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: .5
+}
+
+.phone::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: rgba(32, 32, 32, .5)
+}
+
+.phone::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: rgba(32, 32, 32, .5)
+}
+
+.phone:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: rgba(32, 32, 32, .5)
+}
+
+.phone::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: rgba(32, 32, 32, .5)
+}
+
+.phone::placeholder {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: rgba(32, 32, 32, .5)
+}
+
+.flag-container {
+    background: #fafaff;
+    border-radius: 3px 0 0 3px;
+    height: 36px;
+    margin: 2px;
+    color: #000;
+    z-index: 3
+}
+
+.selected-dial-code {
+    font-weight: 700
+}
+
+label.error {
+    position: absolute;
+    top: 38px;
+    right: 0;
+    z-index: 2;
+    width: 60%;
+    background: #ff003c url(../images/form-attention.svg) no-repeat;
+    color: #fafaff;
+    font-size: 10px;
+    padding: 5px 5px 5px 35px;
+    background-position: 10px 50%;
+    background-size: 16px;
+    border-radius: 0 0 3px 3px
+}
+
+.form--controlWrapper-half label.error {
+    width: 100%;
+    box-sizing: border-box
+}
+
+input.error {
+    background: rgba(255, 0, 60, .3) url(../images/form-invalid.svg) no-repeat 95% !important;
+    border: 2px solid #ff003c !important;
+    padding-right: 30px !important;
+    text-overflow: ellipsis;
+    background-size: 13px 10px !important
+}
+
+input.valid {
+    background: rgba(57, 181, 74, .3) url(../images/form-valid.svg) no-repeat 95% !important;
+    border: 2px solid #39b54a !important;
+    padding-right: 30px !important;
+    text-overflow: ellipsis
+}
+
+.valid-block {
+    position: absolute;
+    background: #fafaff;
+    border: 1px solid #ff003c;
+    box-sizing: border-box;
+    z-index: 9996;
+    top: 38px;
+    width: 100%
+}
+
+.valid-check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.valid-check label {
+    color: #f90201;
+    padding: 5px 25px;
+    position: relative;
+    text-align: left;
+    font-family: inherit;
+    font-size: 10px;
+    line-height: 1;
+    margin: 0
+}
+
+.valid-check.check label {
+    color: #39b54a !important
+}
+
+.valid-check label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 12px;
+    height: 11px;
+    background-image: url(../images/form-invalid.svg);
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+.valid-check.check label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 12px;
+    height: 11px;
+    background-image: url(../images/form-valid.svg);
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat
+}
+
+@media(max-width:767px) {
+    .form {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px 15px
+    }
+}
+
+@media(max-width:576px) {
+    .form--input {
+        height: 60px;
+        font-size: 20px
+    }
+    label.error {
+        top: 58px
+    }
+    .form--btnPasword {
+        height: 60px
+    }
+    .flag-container {
+        height: 56px
+    }
+    .valid-block {
+        top: 58px
+    }
+    .btn.form--btn {
+        height: 90px
+    }
+    .form--input:placeholder-shown:not(:focus)~.form--floatingLabel {
+        font-size: 20px;
+        line-height: 18px
+    }
+    .phone::-webkit-input-placeholder {
+        font-size: 16px;
+        line-height: normal
+    }
+    .phone::-moz-placeholder {
+        font-size: 16px;
+        line-height: normal
+    }
+    .phone:-ms-input-placeholder {
+        font-size: 16px;
+        line-height: normal
+    }
+    .phone::-ms-input-placeholder {
+        font-size: 16px;
+        line-height: normal
+    }
+    .phone::placeholder {
+        font-size: 16px;
+        line-height: normal
+    }
+    input.error {
+        background-position-x: 97.5% !important
+    }
+    .checked-svg:before {
+        top: -8px;
+        left: -8px
+    }
+    .form--btnPasword {
+        font-size: 12px;
+        line-height: 15px
+    }
+    .checked-svg svg {
+        width: 32px !important;
+        height: 32px !important
+    }
+    .privacy-checkbox {
+        padding-left: 8% !important
+    }
+}
+
+@media(max-width:425px) {
+    .form--input:placeholder-shown:not(:focus)~.form--floatingLabel {
+        font-size: 16px;
+        line-height: 18px;
+        top: 20px
+    }
+}
+
+@media(max-width:400px) {
+    .form--input:placeholder-shown:not(:focus)~.form--floatingLabel {
+        font-size: 14px;
+        line-height: 18px;
+        top: 20px
+    }
+    .form--btnPasword {
+        line-height: 13px;
+        font-size: 10px
+    }
+}
+
+/*================================*/
+
+
+.form .input-wrap input {
+    height: 40px !important;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: .5rem 1rem;
+    color: #333;
+}
+.form .checkbox-wrap label {
+    color: #333;
+    font-size: 10px;
+}
+.form .input-wrap .vti__dropdown-item {
+    color: #333;
+}
+.form .input-wrap button {
+    height: 60px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.form .input-wrap .vue-tel-input {
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid #666; 
+    border-radius: 3px;
+}
+
+@media (max-width: 576px) {
+    .form .input-wrap input {
+        height: 60px !important;
+        font-size: 20px;
+    }
+    .form .input-wrap button {
+        height: 90px;
+    }
+}
+

@@ -1,0 +1,106 @@
+body .form-signup-heading {
+    padding-bottom: 15px
+}
+
+body .form-signup-wrapper .intgrtn-form-signup .intgrtn-input-holder {
+    margin-bottom: 35px
+}
+
+body .form-signup-wrapper .intgrtn-form-signup .intgrtn-input-holder .intgrtn-input {
+    padding: 12px;
+    box-sizing: border-box;
+    font: 16px/20px "open sans", Droid Sans, sans-serif;
+    background-color: #f8f8f8;
+    color: #231f20;
+    border: 1px solid #c9cbcc;
+    border-radius: 3px
+}
+
+body .form-signup-wrapper .intgrtn-form-signup .intgrtn-input-holder .intgrtn-input .intgrtn-areas-dropdown {
+    width: 270px
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    body .form-signup-wrapper .intgrtn-form-signup .intgrtn-input-holder .intgrtn-input .intgrtn-areas-dropdown {
+        width: 235px
+    }
+}
+
+body .form-signup-wrapper .intgrtn-form-signup .intgrtn-input-holder.intgrtn-input-holder-password {
+    display: none
+}
+
+body .form-signup-wrapper .intgrtn-form-signup .intgrtn-btn-submit-holder .intgrtn-btn-submit {
+    width: 100%;
+    font: 600 16px open sans, Droid Sans, sans-serif;
+    padding: 0 16px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0;
+    outline: 0;
+    background: #f97500;
+    color: #fff;
+    height: 40px;
+    line-height: 40px
+}
+
+body .footer-links-wrapper {
+    display: flex;
+    justify-content: space-between
+}
+
+body .footer {
+    max-width: 100%
+}
+
+body .footer .footer-ul {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between
+}
+
+@media all and (max-width:768px) {
+    body .footer .footer-ul {
+        display: block;
+        text-align: center;
+        padding: 0
+    }
+}
+
+body .footer .footer-ul li {
+    list-style: none
+}
+
+body .footer .footer-ul li a:hover {
+    color: #fff
+}
+
+body .elementor-size-default span {
+    font-family: open sans, Sans-serif
+}
+
+body .intgrtn-element-populated {
+    margin: 10px 0 !important
+}
+
+body .intgrtn-widget-container {
+    width: 100%;
+    margin: 0 !important
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    .elementor-6136 .elementor-element.elementor-element-51716efa>.elementor-widget-container {
+        margin: 0
+    }
+}
+
+@media only screen and (min-device-width:1024px) and (max-device-width:1366px) {
+    .elementor-6136 .elementor-element.elementor-element-51716efa>.elementor-widget-container {
+        margin: 0
+    }
+}

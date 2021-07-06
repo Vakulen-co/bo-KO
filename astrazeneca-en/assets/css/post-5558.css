@@ -1,0 +1,54 @@
+.elementor-kit-5558 {
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-2eae122b: #4054B2;
+    --e-global-color-4b51b3d8: #23A455;
+    --e-global-color-1a6d02c0: #000;
+    --e-global-color-45ff265c: #FFF;
+    --e-global-color-6a294bd9: #162151;
+    --e-global-color-1bf11e11: #EF1919;
+    --e-global-color-a0bf9ac: #E060DB;
+    --e-global-color-453866cb: #F97500;
+    --e-global-color-3e456f22: #BBB8B8;
+    --e-global-color-4054a05: #062A4A;
+    --e-global-color-51b23195: #F0EEEE;
+    --e-global-color-316fd07d: #F4F8FB;
+    --e-global-color-23b4a597: #000000;
+    --e-global-color-4605971f: #000000;
+    --e-global-color-1738c6bb: #000000;
+    --e-global-color-320eeac7: #000000;
+    --e-global-color-1d596d5e: #000000;
+    --e-global-color-e5e974e: #AABAC0;
+    --e-global-color-b114dde: #000000;
+    --e-global-color-d3c062f: #D8D9DAB3;
+    --e-global-typography-primary-font-family: "Poppins";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Poppins";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Open Sans";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Open Sans";
+    --e-global-typography-accent-font-weight: 500
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1140px
+}
+
+h1.entry-title {
+    display: var(--page-title-display)
+}
+
+@media(max-width:1024px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1025px
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 768px
+    }
+}
