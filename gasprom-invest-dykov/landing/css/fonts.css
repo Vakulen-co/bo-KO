@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Circe';
+    src: url(https://ukrtraff.com/fonts/Circe-Regular.eot?f31036e3ff7199fb4c76a357fa60f2d9);
+    src: local('Circe'), local('Circe-Regular'), url(https://ukrtraff.com/fonts/Circe-Regular.eot?f31036e3ff7199fb4c76a357fa60f2d9?) format('embedded-opentype'), url(https://ukrtraff.com/fonts/Circe-Regular.woff?fa54724c5f76114b7dd0234182ca2064) format('woff'), url(https://ukrtraff.com/fonts/Circe-Regular.ttf?6b28c5938d1e4c3f29ef00f27b021303) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url(https://ukrtraff.com/fonts/Circe-ExtraLight.eot?effbad25f7f143e0fd8032fe33388963);
+    src: local('Circe ExtraLight'), local('Circe-ExtraLight'), url(https://ukrtraff.com/fonts/Circe-ExtraLight.eot?effbad25f7f143e0fd8032fe33388963?) format('embedded-opentype'), url(https://ukrtraff.com/fonts/Circe-ExtraLight.woff?5ab18c53e4622f972c53ab3ba1d8c63c) format('woff'), url(https://ukrtraff.com/fonts/Circe-ExtraLight.ttf?92d19f40aa26320b71dc7983a56695f8) format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url(https://ukrtraff.com/fonts/Circe-Thin.eot?c671a80162628785ee570814626abda2);
+    src: local('Circe Thin'), local('Circe-Thin'), url(https://ukrtraff.com/fonts/Circe-Thin.eot?c671a80162628785ee570814626abda2?) format('embedded-opentype'), url(https://ukrtraff.com/fonts/Circe-Thin.woff?b904f055215773e451497974566882e7) format('woff'), url(https://ukrtraff.com/fonts/Circe-Thin.ttf?8a6928dabfc92fdf4fa5fa4f53534cab) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url(https://ukrtraff.com/fonts/Circe-Light.eot?12e7129864945ecda9a5d408609628c9);
+    src: local('Circe Light'), local('Circe-Light'), url(https://ukrtraff.com/fonts/Circe-Light.eot?12e7129864945ecda9a5d408609628c9?) format('embedded-opentype'), url(https://ukrtraff.com/fonts/Circe-Light.woff?7205e0cf1ffcb4cafccbae0e81e09912) format('woff'), url(https://ukrtraff.com/fonts/Circe-Light.ttf?9fd3216596f21252abbdbc053769134e) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url(https://ukrtraff.com/fonts/Circe-Bold.eot?d03912559b0307467ac09ba244f6d48e);
+    src: local('Circe Bold'), local('Circe-Bold'), url(https://ukrtraff.com/fonts/Circe-Bold.eot?d03912559b0307467ac09ba244f6d48e?) format('embedded-opentype'), url(https://ukrtraff.com/fonts/Circe-Bold.woff?4b8b401a99c49f409edd340a1721c8e5) format('woff'), url(https://ukrtraff.com/fonts/Circe-Bold.ttf?22f16521a7d16c7f8342680cf30b46bd) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url(https://ukrtraff.com/fonts/Circe-ExtraBold.eot?9964577d9fa04e9bfae4e7d8435b144e);
+    src: local('Circe ExtraBold'), local('Circe-ExtraBold'), url(https://ukrtraff.com/fonts/Circe-ExtraBold.eot?9964577d9fa04e9bfae4e7d8435b144e?) format('embedded-opentype'), url(https://ukrtraff.com/fonts/Circe-ExtraBold.woff?a20afb194f0564ad73635291c299680a) format('woff'), url(https://ukrtraff.com/fonts/Circe-ExtraBold.ttf?bbdee7fca9c9e11ebbc95325d0c70c5d) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
