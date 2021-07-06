@@ -1,0 +1,459 @@
+.country-list {
+    z-index: 10
+}
+
+.form-column {
+    overflow: hidden
+}
+
+.allow-dropdown {
+    width: 100%
+}
+.red-line strong {
+    text-transform: uppercase;
+}
+
+.intro-h1,
+.break-word {
+    word-break: break-word;
+}
+
+.generate-pass {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 5px 10px !important;
+    margin: 0 0 30px !important;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs ol li {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.breadcrumbs ol li a {
+    color: #a110cb !important;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6
+}
+
+.table tbody+tbody {
+    border-top: 2px solid #dee2e6
+}
+
+.table .table {
+    background-color: #fff
+}
+
+.table-sm td,
+.table-sm th {
+    padding: .3rem
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #dee2e6
+}
+
+.table-bordered thead td,
+.table-bordered thead th {
+    border-bottom-width: 2px
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .05)
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table-primary,
+.table-primary>td,
+.table-primary>th {
+    background-color: #b8daff
+}
+
+.table-hover .table-primary:hover {
+    background-color: #9fcdff
+}
+
+.table-hover .table-primary:hover>td,
+.table-hover .table-primary:hover>th {
+    background-color: #9fcdff
+}
+
+.table-secondary,
+.table-secondary>td,
+.table-secondary>th {
+    background-color: #d6d8db
+}
+
+.table-hover .table-secondary:hover {
+    background-color: #c8cbcf
+}
+
+.table-hover .table-secondary:hover>td,
+.table-hover .table-secondary:hover>th {
+    background-color: #c8cbcf
+}
+
+.table-success,
+.table-success>td,
+.table-success>th {
+    background-color: #c3e6cb
+}
+
+.table-hover .table-success:hover {
+    background-color: #b1dfbb
+}
+
+.table-hover .table-success:hover>td,
+.table-hover .table-success:hover>th {
+    background-color: #b1dfbb
+}
+
+.table-info,
+.table-info>td,
+.table-info>th {
+    background-color: #bee5eb
+}
+
+.table-hover .table-info:hover {
+    background-color: #abdde5
+}
+
+.table-hover .table-info:hover>td,
+.table-hover .table-info:hover>th {
+    background-color: #abdde5
+}
+
+.table-warning,
+.table-warning>td,
+.table-warning>th {
+    background-color: #ffeeba
+}
+
+.table-hover .table-warning:hover {
+    background-color: #ffe8a1
+}
+
+.table-hover .table-warning:hover>td,
+.table-hover .table-warning:hover>th {
+    background-color: #ffe8a1
+}
+
+.table-danger,
+.table-danger>td,
+.table-danger>th {
+    background-color: #f5c6cb
+}
+
+.table-hover .table-danger:hover {
+    background-color: #f1b0b7
+}
+
+.table-hover .table-danger:hover>td,
+.table-hover .table-danger:hover>th {
+    background-color: #f1b0b7
+}
+
+.table-light,
+.table-light>td,
+.table-light>th {
+    background-color: #fdfdfe
+}
+
+.table-hover .table-light:hover {
+    background-color: #ececf6
+}
+
+.table-hover .table-light:hover>td,
+.table-hover .table-light:hover>th {
+    background-color: #ececf6
+}
+
+.table-dark,
+.table-dark>td,
+.table-dark>th {
+    background-color: #c6c8ca
+}
+
+.table-hover .table-dark:hover {
+    background-color: #b9bbbe
+}
+
+.table-hover .table-dark:hover>td,
+.table-hover .table-dark:hover>th {
+    background-color: #b9bbbe
+}
+
+.table-active,
+.table-active>td,
+.table-active>th {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table-hover .table-active:hover>td,
+.table-hover .table-active:hover>th {
+    background-color: rgba(0, 0, 0, .075)
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e
+}
+
+.table .thead-light th {
+    color: #495057;
+    background-color: #e9ecef;
+    border-color: #dee2e6
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #212529
+}
+
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+    border-color: #32383e
+}
+
+.table-dark.table-bordered {
+    border: 0
+}
+
+.table-dark.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, .05)
+}
+
+.table-dark.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, .075)
+}
+
+@media (max-width: 575.98px) {
+    .table-responsive-sm {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+    .table-responsive-sm>.table-bordered {
+        border: 0
+    }
+}
+
+@media (max-width: 767.98px) {
+    .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+    .table-responsive-md>.table-bordered {
+        border: 0
+    }
+}
+
+@media (max-width: 991.98px) {
+    .table-responsive-lg {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+    .table-responsive-lg>.table-bordered {
+        border: 0
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .table-responsive-xl {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+
+    .table-responsive-xl>.table-bordered {
+        border: 0
+    }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
+.table-responsive>.table-bordered {
+    border: 0
+}
+
+.btn-success {
+    background-color: rgb(0, 197, 0);
+    color: #FFFFFF;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #FFFFFF;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 4px;
+}
+
+.highlight {
+    background-color: rgb(0, 0, 0);
+    color: #FFFFFF;
+}
+
+.hidden {
+    /*display: none;*/
+}
+
+.faq-section .answear.visible {
+    display: block;
+    padding: 10px;
+    border-width: 2px;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.intl-tel-input .country-list .country {
+    text-align: left;
+}
+
+.iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 100%;
+}
+
+form .step{
+    width: 100% !important;
+}
+
+input:not([type=checkbox]){
+    width: 100%;
+    margin-bottom: 0px;
+    padding-left: 12px;
+    border-radius: 0px;
+    background-color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 35px !important;
+}
+
+.vue-tel-input{
+    border: none !important;
+}
+
+form .input-wrap{
+    margin: 10px 0 !important;
+}
+.vti__selection .vti__country-code{
+    color: #fff !important;
+}
+.checkbox-wrap{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+form .alterlink{
+    color: #a110cb !important;
+}
+.play-btn:before{
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHBhdGggZD0iTS04MzgtMjIzMkg1NjJ2MzYwMEgtODM4di0zNjAweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0xNiAxMHYyOGwyMi0xNC0yMi0xNHoiIGZpbGw9IiNhMTEwY2IiLz48L3N2Zz4=) no-repeat !important;
+}
+
+@media screen and (max-width: 768px){
+    .play-btn{
+        opacity: 1 !important;
+        display: flex !important;
+    }
+}
+.play-btn{
+    height: 100% !important;
+}
+
+
+button[type=submit]{
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px 2px;
+    border-radius: 0px;
+    background-color: #a110cb;
+    color: #fff;
+    text-align: center;
+    text-transform: none;
+}
+
+.vue-tel-input:focus-within{
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(161 16 203) !important;
+}
+.vti__dropdown:hover{
+    background: transparent !important;
+}
+.vti__dropdown:focus{
+    outline: none;
+}
