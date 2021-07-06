@@ -1,0 +1,129 @@
+.popbox.visible {
+    opacity: 1;
+    z-index: 999;
+    display: block;
+    transition: opacity .3s ease;
+    visibility: visible
+}
+
+.popbox.opened {
+    visibility: visible
+}
+
+.popbox_locked .popbox_main_content.popbox_blur {
+    -webkit-filter: blur(15px);
+    filter: blur(15px)
+}
+
+html.popbox_locked {
+    overflow: hidden;
+    touch-action: none;
+    -webkit-overflow-scrolling: none
+}
+
+.popbox {
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity .3s ease;
+    opacity: 0;
+    will-change: opacity;
+    background: rgba(60, 52, 66, .7);
+    padding: 18px;
+    overflow-y: auto;
+    visibility: hidden;
+}
+
+.popbox_container {
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    max-width: 90vw
+}
+
+.popbox .btn_close {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+/*==============================================*/
+
+.promo__container .video {
+    position: absolute !important;
+}
+
+@media screen and (max-width:768px) {
+    .promo__container .video {
+        position: relative !important;
+    }
+}
+
+.modal-form .input-wrap input,
+.account__column-form .input-wrap input,
+.account-cta .input-wrap input {
+    height: 50px;
+    padding-left: .813rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    letter-spacing: .05rem;
+    border-radius: .3125rem;
+    border: .0625rem solid #b3c7e6;
+    color: #041028;
+}
+
+.modal-form .vue-tel-input,
+.account__column-form .vue-tel-input,
+.account-cta .vue-tel-input {
+    border-radius: .3125rem;
+}
+
+.modal-form .input-wrap button,
+.account__column-form .input-wrap button,
+.account-cta .input-wrap button {
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    border-radius: .3125rem;
+    transition: all .2s ease-in-out;
+}
+
+.modal-form .input-wrap button,
+.account-cta .input-wrap button {
+    background: linear-gradient(180deg,#0afebf,#01d49e);
+    box-shadow: 1px 4px 4px rgb(46 191 104 / 25%);
+}
+
+.modal-form .input-wrap button:hover,
+.account-cta .input-wrap button:hover {
+    background: linear-gradient(180deg,#01d49e,#0afebf);
+}
+
+.account__column-form .input-wrap button {
+    background: #f49c36;
+    box-shadow: 1px 4px 4px rgb(0 0 0 / 30%);
+}
+
+.account__column-form .input-wrap button:hover {
+    background: linear-gradient(180deg,#f49c36,#F8744F);
+}
+
+.modal__close {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.account__container form {
+    max-width: 31.25rem;
+    margin: 0 auto;
+}
+
+.account__column-form h3,
+.modal__wrapper h3 {
+    margin-top: 0;
+}
