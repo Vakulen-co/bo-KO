@@ -1,0 +1,997 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    color: rgba(71, 77, 87, 1);
+    line-height: 27px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41px;
+    color: rgba(30, 35, 41, 1);
+    margin-top: 30px !important;
+    text-align: center;
+}
+
+/* header */
+
+header {
+    background-color: #12161C;
+    ;
+    max-height: 85px;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.openbtn {
+    border: none;
+    background-color: transparent;
+}
+
+.header_nav {
+    display: none;
+}
+
+.sidebar {
+    height: 550px;
+    width: 0;
+    position: fixed;
+    z-index: 33;
+    top: 0;
+    left: 0;
+    background-color: rgba(250, 250, 250, 1);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    color: #6c6c6c;
+    width: 65px;
+}
+
+.sidebar a {
+    padding-left: 30px;
+    padding-bottom: 36px;
+    text-decoration: none;
+    color: rgba(30, 35, 41, 1);
+    display: block;
+    transition: 0.3s;
+    font-size: 26px;
+    font-weight: 700;
+    width: 270px;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.btn_a {
+    display: block;
+    max-width: 222px;
+    max-height: 46px;
+    margin-left: 30px;
+    background: rgba(240, 185, 11, 1);
+    border-radius: 5px;
+}
+
+.sidebar .btn_a {
+    border-radius: 100px;
+    max-width: 270px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.btn_a a {
+    color: rgba(51, 51, 51, 1);
+    font-size: 22px;
+    display: block;
+    width: 270px;
+    height: 53px;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+/* header */
+
+/* first section */
+
+.first_section {
+    background-image: url(../img/Background_t.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+video {
+    width: 100%;
+    max-width: 540px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.video video {
+    margin: auto;
+    object-fit: cover;
+}
+
+video:focus {
+    outline: none;
+}
+
+.first_section h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e6e8ea;
+}
+
+.color_span {
+    color: rgba(240, 185, 11, 1);
+}
+
+.first_section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#first_form .input-wrap {
+    width: 350px;
+    margin: 0 0 15px 0 !important;
+}
+
+.input_wrapper input,
+#first_form .input-wrap input {
+    background-color: #FFFFFF;
+    color: black;
+    height: 42px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-weight: 300;
+    border: none;
+}
+
+#first_form .input-wrap .vue-tel-input {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+#first_form .checkbox-wrap label {
+    font-size: 12px;
+    color: #777;
+    max-width: 100%;
+    padding-bottom: 0
+}
+
+.first_form .iti {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(183, 189, 209, 1);
+    ;
+}
+
+label {
+    padding-bottom: 5px;
+    margin-top: -8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#phone1 {
+    width: 100%;
+}
+
+#phone1-error {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+}
+
+#phone2-error {
+    position: absolute;
+    left: 0%;
+    bottom: -35px;
+}
+
+.iti {
+    color: black;
+    font-size: 16px;
+}
+
+.iti__selected-flag,
+.iti__selected-flag:focus {
+    border-radius: 5px;
+    outline: none;
+}
+
+.first_section .submit_btn,
+#first_form .input-wrap button {
+    height: 48px;
+    background-color: rgba(240, 185, 11, 1);
+    border-radius: 5px;
+    border: none;
+    color: rgba(34, 34, 34, 1);
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+/* first section */
+
+/* second section */
+
+.second_section {
+    background-color: #FAFAFA;
+}
+
+.second_section hr {
+    margin: auto;
+    max-width: 345px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(240, 185, 11, 1);
+    opacity: 1;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+    margin-bottom: 10px;
+}
+
+.blockqoute {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(240, 185, 11, 1);
+    padding: 25px;
+}
+
+/* second section */
+
+/* third section */
+
+.third_section {
+    background-color: #FAFAFA;
+    padding-bottom: 50px;
+}
+
+.advantage_card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 340px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 226px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.advantage_card img {
+    width: 94px;
+    height: 94px;
+}
+
+.card_text {
+    text-align: center;
+}
+
+/* third section */
+
+/* fourth section */
+
+.fourth_section {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.deal {
+    background: #FFFFFF;
+    color: #474D57;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(118, 128, 143, 1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    max-width: 345px;
+    margin: auto;
+    margin-bottom: 2px;
+    column-gap: 20px;
+    transition: opacity 2000ms;
+    will-change: opacity;
+}
+
+.faded-out {
+    opacity: 0;
+}
+
+.time,
+.sum {
+    text-align: right;
+    align-self: center;
+}
+
+.crypto,
+.eqivalent {
+    text-align: left;
+    height: 26.8px;
+}
+
+x .deal img {
+    margin-right: 0px;
+    width: 50px;
+}
+
+.time img {
+    width: 20px;
+}
+
+.roi {
+    grid-column-start: span 2;
+    text-align: center;
+    color: rgba(0, 209, 22, 1);
+}
+
+.deals_header {
+    display: none;
+}
+
+.form_link {
+    height: 48px;
+    background: rgba(240, 185, 11, 1);
+    border-radius: 5px;
+    border: none;
+    color: rgba(34, 34, 34, 1);
+    font-size: 16px;
+    width: 194px;
+    margin: auto;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 9px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.form_link:hover,
+.form_link:visited {
+    text-decoration: none;
+    color: rgba(34, 34, 34, 1);
+}
+
+/* fourth section */
+
+/* fifth section */
+
+.arrow {
+    display: none;
+}
+
+.investment_card.first {
+    margin-bottom: 20px;
+}
+
+.investment_card {
+    margin: auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 345px;
+    display: flex;
+    flex-direction: column;
+}
+
+.investment_card p {
+    margin-bottom: 5px !important;
+    font-style: 20px;
+    text-align: left;
+}
+
+.investment_card input,
+.result {
+    background-color: #EEEEEE;
+    border-radius: 6px;
+    color: rgba(183, 189, 209, 1);
+    border: none;
+    padding: 13px;
+    justify-self: start;
+    max-width: 235px;
+    height: 42px;
+}
+
+.result {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.result p {
+    padding: 0;
+}
+
+.investment_card img {
+    width: 45px;
+}
+
+.crypto_result {
+    display: flex;
+    margin-top: 20px;
+    gap: 12px;
+    color: rgba(118, 128, 143, 1);
+}
+
+.crypto_result span {
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+}
+
+/* fifth section */
+
+/* sixth section */
+
+.instruction .advantage_card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.instruction .advantage_card img {
+    width: 66px;
+}
+
+.instruction {
+    margin-bottom: 30px;
+}
+
+/* sixth section */
+
+/* seventh section */
+
+.seventh_section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #12161C;
+}
+
+.seventh_section .submit_btn,
+#second_form .input-wrap button {
+    height: 56px;
+    background: rgba(240, 185, 11, 1);
+    border-radius: 5px;
+    border: none;
+    color: rgba(34, 34, 34, 1);
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.second_form {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.second_form h3 {
+    font-weight: 700;
+    color: white;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.second_form .input_wrapper {
+    width: 100%;
+}
+
+.second_form input,
+#phone2 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 48px;
+}
+
+#second_form .input-wrap {
+    margin: 0 0 15px 0 !important;
+}
+
+#second_form .input-wrap input {
+    background-color: #FFFFFF;
+    color: black;
+    height: 48px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-weight: 300;
+    border: none;
+}
+
+#second_form .input-wrap .vue-tel-input {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+#second_form .checkbox-wrap label {
+    font-size: 12px;
+    color: #777;
+    max-width: 100%;
+    padding-bottom: 0
+}
+
+#second_form .checkbox-wrap input[type="checkbox" i] {
+    display: inline;
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+/* seventh section */
+
+/* footer */
+
+footer {
+    height: 116px;
+}
+
+footer p {
+    color: rgba(125, 125, 125, 1);
+    font-size: 20px;
+    text-align: right;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    padding-bottom: 20px;
+}
+
+.footer_wrapper {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 116px;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* footer */
+
+@media (min-width: 768px) {
+    h2 {
+        margin-top: 50px !important;
+        margin-bottom: 20px !important;
+    }
+    /* header */
+    /* header */
+    /* first section */
+    .first_section {
+        padding-top: 30px;
+    }
+    .first_section h3 {
+        font-size: 28px;
+        max-width: 530px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .input_wrapper {
+        max-width: 540px;
+    }
+    /* first section */
+    .video video {
+        padding-top: 0;
+        min-height: 390px;
+    }
+    /* second section */
+    .blockqoute {
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 730px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .second_section hr {
+        max-width: 690px;
+        margin: auto;
+    }
+    /* second section */
+    /* third section */
+    .advantage_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .advantage_card {
+        margin-bottom: 0;
+    }
+    /* third section */
+    /* fourth section */
+    .deals_header {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr 1.2fr 1fr 1fr;
+        column-gap: 10px;
+        padding: 20px;
+        background: #FFFFFF;
+        color: #474D57;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        width: 100%;
+    }
+    .deals_wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .roi {
+        grid-column-start: 5;
+        align-self: center;
+    }
+    .time,
+    .sum {
+        text-align: left;
+        align-self: center;
+    }
+    .crypto,
+    .eqivalent {
+        text-align: left;
+        align-self: center;
+    }
+    .deals_header span {
+        font-size: 20px;
+        color: #474D57;
+    }
+    .deal {
+        padding: 20px;
+        grid-template-columns: 0.8fr 1.2fr 1.2fr 1fr 1fr;
+        column-gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        min-height: 85px;
+        margin-bottom: 2px;
+    }
+    .deal img {
+        margin-right: 7px;
+        width: 40px;
+    }
+    .time img {
+        width: 20px;
+    }
+    .fourth_section .container {
+        padding: 0 !important;
+    }
+    /* fourth section */
+    /* fifth section */
+    .investment_wrapper {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .investment_card {
+        margin: 0;
+    }
+    .investment_card.first {
+        margin: 0;
+    }
+    /* fifth section */
+    /* sixth section */
+    .instruction {
+        margin-bottom: 50px;
+    }
+    /* sixth section */
+    /* seventh section */
+    .second_form .input_wrapper input {
+        width: 100%;
+    }
+    .second_form h3 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .seventh_section {
+        background-color: #12161C;
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
+    /* seventh section */
+    /* footer */
+    footer {
+        height: 85px;
+        background-color: #12161C;
+    }
+    footer p {
+        color: rgba(125, 125, 125, 1);
+        font-size: 20px;
+        text-align: right;
+        margin: 0;
+        font-family: "Nunito", sans-serif;
+        padding-bottom: 0px;
+    }
+    .footer_wrapper {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+    /* footer */
+}
+
+@media (min-width: 992px) {
+    h2 {
+        margin-top: 80px !important;
+    }
+    /* header */
+    /* header */
+    /* first section */
+    .first_section {
+        padding-top: 40px;
+        background-image: url(../img/Background_d.jpg);
+    }
+    .first_section h3 {
+        font-size: 28px;
+        line-height: 35px;
+        max-width: 540px;
+        margin-bottom: 10px;
+    }
+    .input_wrapper input {
+        width: 350px;
+    }
+    #phone1 {
+        width: 350px;
+    }
+    .first_section .submit_btn {
+        width: 350px;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 45px;
+    }
+    .first_section form {
+        align-items: flex-start;
+    }
+    .first_section form h3 {
+        min-width: 50%;
+        width: 50%;
+    }
+    /* first section */
+    /* second section */
+    /* second section */
+    /* third section */
+    .advantage_wrapper {
+        display: flex;
+        gap: 30px;
+    }
+    .advantage_card {
+        height: 285px;
+        padding-right: 20px;
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+    .advantage_card img {
+        margin-top: 36px;
+    }
+    /* third section */
+    /* fourth section */
+    .deal {
+        width: 920px;
+        max-width: 920px;
+    }
+    .deals_header {
+        width: 920px;
+        max-width: 920px;
+        margin: auto;
+        margin-bottom: 1px;
+    }
+    /* fourth section */
+    /* fifth section */
+    /* fifth section */
+    /* sixth section */
+    /* sixth section */
+    /* seventh section */
+    .second_form input,
+    #phone2,
+    .second_form .iti {
+        min-width: 400px;
+        width: 100%;
+    }
+    .second_form {
+        flex-direction: row;
+    }
+    /* seventh section */
+    /* footer */
+    /* footer */
+}
+
+@media(min-width:1024px) {}
+
+@media (min-width: 1200px) {
+    /* header */
+    .openbtn,
+    .sidebar {
+        display: none;
+    }
+    .header_nav {
+        display: flex;
+    }
+    .header_nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+    .header_nav a,
+    .header_nav a:visited {
+        color: rgba(255, 255, 255, 1);
+        font-size: 0.9rem;
+        text-decoration: none;
+        max-width: 270px;
+        padding-right: 30px;
+        font-weight: 300;
+    }
+    .btn_a {
+        width: 270px;
+        margin-left: 0;
+        height: 53px;
+    }
+    .header_nav li .btn_a a {
+        color: rgba(51, 51, 51, 1);
+        font-size: 20px;
+        width: 222px;
+        height: 46px;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 8px;
+        font-weight: 400;
+    }
+    /* header */
+    /* first section */
+    .first_section h3 {
+        margin-left: 0;
+    }
+    /* first section */
+    /* second section */
+    .second_section hr {
+        max-width: 830px;
+        margin: auto;
+    }
+    .blockqoute {
+        max-width: 730px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    /* second section */
+    /* third section */
+    .advantage_card {
+        height: 255px;
+    }
+    /* third section */
+    /* fourth section */
+    /* fourth section */
+    /* fifth section */
+    .arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08);
+        border-radius: 10px;
+        height: 90px;
+        width: 90px;
+    }
+    .investment_wrapper {
+        gap: 65px;
+        align-items: center;
+    }
+    .investment_card {
+        max-width: 350px;
+    }
+    /* fifth section */
+    /* sixth section */
+    .instruction {
+        margin-bottom: 90px;
+    }
+    /* sixth section */
+    /* seventh section */
+    .second_form input,
+    #phone2,
+    .second_form .iti {
+        min-width: 540px;
+        width: 100%;
+    }
+    .second_form h3 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .seventh_section {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+    /* seventh section */
+    /* footer */
+    /* footer */
+}
+
+@media (min-width: 1400px) {
+    .btn_a {
+        margin-left: 90px;
+    }
+}
+    @media (max-width: 385px) {
+        .input_wrapper {
+            width: 280px;
+        }
+        #phone1 {
+            width: 280px;
+        }
+        .second_form {}
+    }
+    @media (max-width: 345px) {
+        .deal {
+            grid-template-columns: 0.8fr 1fr;
+        }
+        .second_form input,
+        .second_form .submit_btn,
+        #phone2 {
+            width: 260px;
+        }
+    }
+
+
+
+@media (max-width: 576px) {
+    .first_section h3 {
+        margin-bottom: 20px;
+    }
+}
