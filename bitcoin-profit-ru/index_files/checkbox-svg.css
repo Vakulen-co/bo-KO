@@ -1,0 +1,156 @@
+.checkbox-svg {
+    margin: 14px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-svg label.checked-svg {
+    cursor: pointer;
+    position: relative;
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+    min-height: auto;
+    padding-left: initial;
+}
+
+.checked-svg:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.checked-svg svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1px;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.checked-svg svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+
+.checked-svg svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.checked-svg:hover:before {
+    opacity: 1;
+}
+
+.checked-svg:hover svg {
+    stroke: #4285f4;
+}
+
+#cbx:checked+.checked-svg svg {
+    stroke: #59f442;
+}
+
+#cbx:checked+.checked-svg svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx:checked+.checked-svg svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+#cbx-2-pop:checked+.checked-svg svg {
+    stroke: #59f442;
+}
+
+#cbx-2-pop:checked+.checked-svg svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx-2-pop:checked+.checked-svg svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+#cbx-3:checked+.checked-svg svg {
+    stroke: #59f442;
+}
+
+#cbx-3:checked+.checked-svg svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx-3:checked+.checked-svg svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+#cbx-4:checked+.checked-svg svg {
+    stroke: #59f442;
+}
+
+#cbx-4:checked+.checked-svg svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx-4:checked+.checked-svg svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.privacy-checkbox {
+    font-family: inherit;
+    padding-left: 4%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    color: #000;
+    text-align: left;
+}
+
+[for="cbx-2-pop"]+.privacy-checkbox {
+    color: #fff;
+}
+
+.checkbox-svg p {
+    margin: 0;
+}
+
+#myform1 .privacy-checkbox {
+    color: #fff;
+}
+
+#myform2 .privacy-checkbox {
+    color: #f9ac13;
+}
+
+@media (max-width: 400px) {
+    .checkbox-svg {
+        margin: 11px 10px;
+    }
+    .checkbox-svg p {
+        color: #f9ac13;
+    }
+}

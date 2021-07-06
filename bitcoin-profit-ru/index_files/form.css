@@ -1,0 +1,499 @@
+.form-input_control {
+    width: 100%;
+    height: 52px;
+    padding-left: 40px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #555555;
+    box-shadow: 0px 4px 8px rgba(1, 56, 0, 0.25);
+}
+
+.fieldstep_form {
+    width: 100%;
+}
+
+.hide {
+    display: none !important;
+}
+
+.main__form_field {
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 530px;
+}
+
+.main__form_field i {
+    line-height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    /*color: gray;*/
+    font-size: 14px;
+}
+
+.fieldstep_btn-next {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border: antiquewhite;
+    outline: none;
+    transition: all ease .3s;
+    top: 0;
+    -webkit-box-shadow: 0 0 15px 0 rgba(253, 104, 4, 1);
+    -moz-box-shadow: 0 0 15px 0 rgba(253, 104, 4, 1);
+    background: linear-gradient(180deg, #FFD400 0%, #F79E1B 100%);
+    box-shadow: 0px 2px 6px rgba(10, 0, 74, 0.25);
+    border-radius: 8px;
+    min-height: 76px;
+}
+
+/*
+
+FORM STEPS START
+
+*/
+
+.stepIndicator {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+.stepIndicator .stepBadge:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1.75rem;
+    right: -.8rem;
+    width: 1.6rem;
+    height: 1rem;
+    background-image: url("../images/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.stepIndicator .stepBadge:not(.active) span {
+    background-color: #eaeaea;
+}
+
+.stepIndicator .stepBadge.done span {
+    background-color: #34abdf;
+}
+
+.stepIndicator .stepBadge.active span {
+    background-color: #8bc34a;
+    animation-name: blink;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.stepIndicator .stepBadge span {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 700;
+    position: relative;
+    z-index: 10;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 3px white;
+    width: 36px;
+    height: 36px;
+    line-height: 2.5rem;
+    color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: url(../images/formBadgeSprite.svg);
+    background-size: 100% auto
+}
+
+.stepIndicator .stepBadge {
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.stepIndicator .stepBadge.active span {
+    background-position: center center;
+}
+
+.stepIndicator .stepBadge.done span {
+    background-position: top center
+}
+
+.stepIndicator .stepBadge:not(.active):not(.done) span {
+    background-position: bottom center
+}
+
+/*
+
+FORM STEPS END
+
+*/
+
+/*VALIDATION HINTS AND ERROR RED START*/
+
+.error:not(input) {
+    text-align: center;
+    color: #C40000;
+    font-size: 14px;
+    position: absolute;
+    width: 54%;
+    z-index: 999;
+    background: #FFFFFF;
+    bottom: 99%;
+    right: 5px;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.error:not(input):after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+}
+
+.error:not(input):after {
+    border-color: #ffffff transparent transparent transparent;
+    top: 100%;
+    right: 4%;
+    margin-left: -10px;
+}
+
+input.error {
+    background: #FFF5F5;
+    border: 1px solid #CF0000;
+    background-image: url(../images/error-info.svg);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    background-size: 6%;
+}
+
+input.valid {
+    background: #DAFCD2;
+    border: 1px solid #23B100;
+    background-image: url(../images/valid-info.svg);
+    background-repeat: no-repeat;
+    background-position: 96% 50%;
+    background-size: 6%;
+}
+
+.main__form_field input.error~i {
+    color: #CF0000;
+}
+
+.main__form_field input.valid~i {
+    color: #23B100;
+}
+
+/*EFFECT FOR INPUT */
+
+:focus {
+    outline: none;
+}
+
+.form-input_control {
+    border: 1px solid #ccc;
+    transition: 0.4s;
+    padding: 15px 35px 7px 35px;
+}
+
+.form-input_control~.focus-border:before,
+.form-input_control~.focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.3s;
+}
+
+.form-input_control.valid~.focus-border:before,
+.form-input_control.valid~.focus-border:after {
+    background-color: #23B100;
+}
+
+.form-input_control.error~.focus-border:before,
+.form-input_control.error~.focus-border:after {
+    background-color: #CF0000;
+}
+
+.form-input_control~.focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+
+.form-input_control.password~.focus-border:after {
+    bottom: auto;
+    top: 54px;
+}
+
+.form-input_control~.focus-border i:before,
+.form-input_control~.focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+
+.form-input_control~.focus-border i:after {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.form-input_control:focus~.focus-border:before,
+.form-input_control:focus~.focus-border:after,
+.has-content.form-input_control~.focus-border:before,
+.has-content.form-input_control~.focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.form-input_control:focus~.focus-border i:before,
+.form-input_control:focus~.focus-border i:after,
+.has-content.form-input_control~.focus-border i:before,
+.has-content.form-input_control~.focus-border i:after {
+    height: 100%;
+    transition: 0.4s;
+}
+
+.focus-border {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 80%;
+    top: -2px;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.form-input_control~.focus-label {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    display: block;
+    top: 0;
+    color: #757575;
+    font-weight: normal;
+    transition: 0.3s;
+    padding-left: 40px;
+    margin: 16px 0 16px 0;
+    pointer-events: none;
+}
+
+.form-input_control:focus~.focus-label,
+.has-content.form-input_control~.focus-label {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    color: #3399FF;
+    transition: 0.3s;
+}
+
+.has-content.form-input_control.error~.focus-label {
+    color: #CF0000;
+}
+
+.has-content.form-input_control.valid~.focus-label {
+    color: #23B100;
+}
+
+.focus-label {
+    z-index: 2 !important;
+}
+
+/*EFFECT FOR INPUT END */
+
+.valid-check {
+    padding-left: 15px;
+    margin: 1%;
+    list-style: none;
+    background-image: url(../images/error_pass-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.check {
+    background-image: url(../images/check_pass-icon.png);
+}
+
+.valid-check label {
+    color: #757575 !important;
+    padding: 2px;
+    font-weight: 700;
+    font-size: 11px;
+    /*    line-height: 17px;*/
+    /*    display: list-item;*/
+}
+
+.valid-check.check label {
+    font-weight: 700;
+    color: #23B100 !important;
+    font-size: 11px;
+    padding: 2px;
+}
+
+.password.error:focus~.valid-check:not(.check)>label,
+.password.error~.valid-check:not(.check)>label {
+    color: #CF0000 !important;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 2px;
+}
+
+.valid-block label.error {
+    display: none !important;
+}
+
+/*VALIDATION HINTS AND ERROR RED END*/
+
+.valid-block {
+    position: relative;
+    background: white;
+    padding: 0;
+    border-radius: 8px;
+}
+
+.fa-lock {
+    top: 14% !important;
+    left: 30px !important;
+}
+
+/*TELEPHONE START*/
+
+.phone-hint {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 17px;
+    padding: 0 !important;
+}
+
+.phoneInfo {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 0 0 0 10px;
+    border-radius: 14px 0 0 14px;
+    justify-content: space-between;
+}
+
+.phoneInfo h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #757575;
+}
+
+.phoneInfo p {
+    font-weight: 600;
+    color: #757575;
+    font-size: 0.8em;
+}
+
+.phone {
+    padding-left: 95px !important;
+    padding: 15px 35px 15px 35px;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    margin-right: 6px;
+}
+
+/*TELEPHONE END*/
+
+.fieldstep_btn-next:hover {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: .4s;
+}
+
+.social-desc__item:hover {
+    background: #34abdf;
+    transition: .3s;
+}
+
+.social-desc__item:hover>div,
+.social-desc__item:hover>p {
+    color: white;
+}
+
+.focus-label {
+    opacity: 0;
+}
+
+.fieldstep_btn-next {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.fieldstep_btn-next span {
+    font-size: 18px;
+    color: #FFFFFF;
+}

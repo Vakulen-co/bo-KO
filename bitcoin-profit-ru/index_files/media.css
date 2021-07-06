@@ -1,0 +1,277 @@
+@media (max-width: 1200px) {
+    .section-how .form-block,
+    .section-footer_form .form-block {
+        padding: 10px;
+    }
+    .bg-bitcoin-absolute {
+        width: 40%;
+    }
+    .stepIndicator .stepBadge {
+        width: 25%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-section_divider,
+    .header-section_slick {
+        display: none;
+    }
+    .about-wrapper {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .heading-text {
+        font-size: 30px;
+    }
+    .main-row {
+        flex-wrap: wrap;
+        background: none;
+    }
+    .about-wrapper img {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+    .about-wrapper .text-wrapper {
+        margin-right: auto;
+    }
+    .form-block {
+        width: 100% !important;
+        height: auto;
+    }
+    .video-block {
+        width: 100%;
+        margin: 0 0 55px 0;
+    }
+    /*.section-partners,*/
+    /*.section-partners-2 {*/
+    /*-webkit-background-size: 100%;*/
+    /*background-size: 100%;*/
+    /*}*/
+    .section-why {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .section-how .row {
+        flex-direction: column;
+    }
+    .section-how {
+        background-position: -90% 0%;
+        padding-top: 30px;
+    }
+    .section-how .row .form-block {
+        width: 100%;
+        max-width: 500px;
+    }
+    .section-how .row .how-steps_wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+    .faq-item {
+        display: block;
+    }
+    .section-footer_form .row {
+        flex-direction: column-reverse;
+    }
+    .creator-footer_form {
+        width: 100%;
+    }
+    .section-footer_form .form-block {
+        max-width: 500px;
+    }
+    .tablica__wrapper {
+        overflow-x: scroll;
+    }
+    table {
+        width: 600px;
+    }
+    #myVideo {
+        width: 100%;
+    }
+}
+
+.section-testimonials {
+    justify-content: center;
+}
+
+.section-why .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.why-block_wrapper {
+    flex: 0 0 calc(16.66% - 20px);
+    margin: 10px;
+}
+
+.testimonial-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-row {
+    flex: 0 0 calc(16.66% - 20px);
+    margin: 10px;
+}
+
+.faq-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.faq-item {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+}
+
+.section-faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-about {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.results {
+    padding: 0 20px;
+}
+
+/*
+  START
+  ##Device = Desktops
+
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+
+  END
+*/
+
+/*
+  START
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/*
+  END
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+/*
+  START
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/*
+  END
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*
+  START
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+
+/*
+  END
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+/*
+  START
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .creator-content {
+        padding: 0 20px;
+    }
+    .bg-bitcoin-absolute {
+        display: none;
+    }
+    .testimonial-wrapper {
+        padding: 24px 10px;
+        height: auto;
+        min-height: auto;
+    }
+    .faq-item {
+        flex: 0 0 calc(100% - 20px);
+        margin: 10px;
+    }
+    .testimonial-video_image img {
+        width: 100%;
+    }
+    .testimonial-row {
+        flex: 0 0 calc(100% - 0px);
+        margin: 10px;
+    }
+    .account-number {
+        display: none;
+    }
+    .creator-content .header-wrapper {
+        display: block;
+    }
+    .heading-text {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    .header-section_company {
+        margin: auto;
+    }
+    .header-section {
+        justify-content: center;
+        background: none;
+        box-shadow: none;
+    }
+    .form-text_header {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .form-block {
+        padding: 10px 10px;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .video-block {
+        margin: 0 0 30px 0;
+    }
+    .header-section_wrapper {
+        height: auto;
+        margin-top: 10px;
+    }
+    .form-section .background-main_filter {
+        display: none;
+    }
+    body {
+        background: url(../images/bg-comeback.png);
+        background-size: contain;
+        background-repeat-x: no-repeat;
+    }
+    .heading-text h1 {
+        margin: 10px 0;
+        text-shadow: 0 6px 6px #333;
+    }
+}
