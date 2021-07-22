@@ -1,0 +1,499 @@
+
+        @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap);
+        @font-face {
+            font-family: HelveticaNeue-Condensed;
+            src: url(fonts/HelveticaNeue-Condensed.eot);
+            src: local("☺"), url(fonts/HelveticaNeue-Condensed.woff) format("woff"), url(fonts/HelveticaNeue-Condensed.ttf) format("truetype"), url(fonts/HelveticaNeue-Condensed.svg) format("svg");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
+        @font-face {
+            font-family: HelveticaNeue-Condensed;
+            src: url(fonts/HelveticaNeue-Condensed\ Bold.eot);
+            src: local("☺"), url(fonts/HelveticaNeue-Condensed\ Bold.woff) format("woff"), url(fonts/HelveticaNeue-Condensed\ Bold.ttf) format("truetype"), url(fonts/HelveticaNeue-Condensed\ Bold.svg) format("svg");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap
+        }
+
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box
+        }
+
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: #fff
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+            margin-bottom: .5rem
+        }
+
+        p {
+            margin-top: 0
+        }
+
+        p {
+            margin-bottom: 1rem
+        }
+
+        ul {
+            margin-top: 0;
+            margin-bottom: 1rem
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none
+        }
+
+        input {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit
+        }
+
+        input {
+            overflow: visible
+        }
+
+        ::-webkit-file-upload-button {
+            font: inherit;
+            -webkit-appearance: button
+        }
+
+        h1,
+        h2 {
+            margin-bottom: .5rem;
+            font-weight: 500;
+            line-height: 1.2
+        }
+
+        h1 {
+            font-size: 2.5rem
+        }
+
+        h2 {
+            font-size: 2rem
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto
+        }
+
+        @media (min-width:576px) {
+            .container {
+                max-width: 540px
+            }
+        }
+
+        @media (min-width:768px) {
+            .container {
+                max-width: 720px
+            }
+        }
+
+        @media (min-width:992px) {
+            .container {
+                max-width: 960px
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                max-width: 1140px
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px
+        }
+
+        .col-5,
+        .col-7,
+        .col-lg-8,
+        .col-md-4 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .col-5 {
+            flex: 0 0 41.6666666667%;
+            max-width: 41.6666666667%
+        }
+
+        .col-7 {
+            flex: 0 0 58.3333333333%;
+            max-width: 58.3333333333%
+        }
+
+        .order-1 {
+            order: 1
+        }
+
+        .order-2 {
+            order: 2
+        }
+
+        .order-3 {
+            order: 3
+        }
+
+        @media (min-width:768px) {
+            .col-md-4 {
+                flex: 0 0 33.3333333333%;
+                max-width: 33.3333333333%
+            }
+            .order-md-1 {
+                order: 1
+            }
+            .order-md-2 {
+                order: 2
+            }
+        }
+
+        @media (min-width:992px) {
+            .col-lg-8 {
+                flex: 0 0 66.6666666667%;
+                max-width: 66.6666666667%
+            }
+        }
+
+        .align-items-center {
+            align-items: center !important
+        }
+
+        .w-100 {
+            width: 100% !important
+        }
+
+        .mb-5 {
+            margin-bottom: 3rem !important
+        }
+
+        .text-center {
+            text-align: center !important
+        }
+
+        .iti__arrow {
+            margin-left: 6px;
+            width: 0;
+            height: 0;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 4px solid #555
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            padding: 0;
+            margin: 0;
+            line-height: 1.25
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        p {
+            font-size: 18px
+        }
+
+        @media (max-width:767px) {
+            p {
+                font-size: 16px
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto
+        }
+
+        .language {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            color: #000;
+            font-size: 16px;
+            z-index: 9999;
+            align-self: center
+        }
+
+        @media (max-width:767px) {
+            .language {
+                font-size: 16px;
+                margin-right: 15px
+            }
+        }
+
+        .language img {
+            margin-right: 10px;
+            width: 21px
+        }
+
+        .language span {
+            display: flex;
+            align-items: center;
+            padding: 3px 5px;
+            background: #322b7c;
+            color: #fff
+        }
+
+        .language span i {
+            margin-left: 5px;
+            vertical-align: middle;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 4px solid #fff
+        }
+
+        .language-list {
+            list-style: none;
+            padding: 0 5px;
+            margin-left: 0;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            text-align: center;
+            min-width: 100%;
+            display: none;
+            background-color: #322b7c;
+            border: 1px solid
+        }
+
+        .language-list a {
+            color: #fff;
+            display: flex
+        }
+
+        .header {
+            background-color: #191c35;
+            padding: 15px 0;
+            margin-bottom: 0!important;
+            /* margin-bottom: 20px */
+            border-bottom: 1px solid rgb(251, 175, 65);
+        }
+
+        .header-menu {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            font-size: 16px;
+            justify-content: flex-end
+        }
+
+        @media (max-width:991px) {
+            .header-menu {
+                display: none
+            }
+        }
+
+        .header-menu li {
+            padding: 0 20px
+        }
+
+        .header-menu a {
+            color: #fff !important
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-family: HelveticaNeue-Condensed
+        }
+
+        @media (max-width:767px) {
+            .heading {
+                font-size: 28px;
+                margin-bottom: 15px
+            }
+        }
+
+        .heading-subtitle {
+            margin-top: 30px;
+            font-size: 36px;
+            color: #fbaf41;
+            text-align: center;
+            font-weight: 700;
+            font-family: HelveticaNeue-Condensed
+        }
+
+        @media (max-width:767px) {
+            .heading-subtitle {
+                font-size: 24px;
+                margin-top: 5px
+            }
+        }
+
+        .main,
+        .white {
+            color: #fff
+        }
+
+        .main {
+            background-color: #191c35;
+            padding: 60px 0
+        }
+
+        @media (max-width:767px) {
+            .main {
+                padding: 30px 0
+            }
+        }
+
+        .main p {
+            font-size: 16px
+        }
+
+        .main-form-body .input-wrap input {
+            border-radius: 7px;
+            border: 1px solid #c2c2c2;
+            background-image: linear-gradient(0deg, #f1f0f0, #fff);
+            width: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            color: #989898;
+            padding: 10px;
+            height: 50px
+        }
+
+        .main-form-body .vue-tel-input {
+            border-radius: 7px;
+        }
+
+        .main-form-body .vti__dropdown {
+            outline: none;
+        }
+
+        .vti__dropdown-item {
+            color: #333;
+        }
+
+        @media (max-width:767px) {
+            input {
+                font-size: 16px
+            }
+        }
+
+        .checkbox-wrap input {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        .checkbox-wrap label {
+            color: #333;
+            font-family: Poppins,sans-serif!important;
+        }
+
+        .checkbox-wrap label .alterlink {
+            color: #fbaf41;
+            font-size: 14px;
+            font-family: Poppins,sans-serif!important;
+        }
+
+        .main-form-body .input-wrap button {
+            border-radius: 7px;
+            border: 1px solid #c86b00;
+            background-image: linear-gradient(0deg,#f19023,#fda642);
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            width: 100%;
+            transition: all .3s;
+            font-family: HelveticaNeue-Condensed;
+        }
+
+        .main-form-body .input-wrap button:hover {
+            box-shadow: 0.3px 4px 13.8px 2.2px rgb(20 22 25 / 15%);
+        }
+
+        .bg-1 {
+            background-image: url(bg-1.webp)!important;
+        }
+        .bg-2 {
+            background-image: url(list-1.webp)!important;
+        }
+        .bg-3 {
+            background-image: url(list-2.webp)!important;
+        }
+        .bg-4 {
+            background-image: url(list-3.webp)!important;
+        }
+        .section-final {
+            background-image: url(bg-final.webp)!important;
+        }
+        .footer {
+            background-image: url(footerbg.webp)!important;
+        }
+
+        

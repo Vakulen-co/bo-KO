@@ -1,0 +1,106 @@
+.select2-container {
+	width: 350px !important;
+	max-width: 100% !important
+}
+
+.select2-container--default .select2-selection--single {
+	font-size: 14px !important;
+	line-height: 55px !important;
+	background-color: #eee !important;
+	border: 1px solid #0c5275 !important;
+	border-radius: 6px !important;
+	height: 55px !important;
+	text-align: center !important;
+	background-image: linear-gradient(0deg, #e6e6e6, #fff) !important
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 55px !important
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 55px !important
+}
+
+.flag-icon {
+	margin-right: 5px
+}
+
+.gtd-leads-form .col-xs-5 {
+	padding-right: 4px
+}
+
+.gtd-leads-form .col-xs-7 {
+	padding-left: 4px
+}
+
+.gtd-video-title {
+	left: auto !important;
+	right: 30px !important
+}
+
+.checkbox-wrap {
+	display: flex !important
+}
+
+input:not([type=checkbox]) {
+	height: 34px !important
+}
+
+.section-2 {
+	position: relative;
+	width: 100%
+}
+
+video.bitgif {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: calc(100vh - 80px);
+	min-height: 600px;
+	object-fit: cover
+}
+
+.background-video.w-background-video.w-background-video-atom {
+	width: 100%;
+	height: calc(100vh - 80px);
+	min-height: 600px;
+	object-fit: cover;
+	position: relative;
+	z-index: 2
+}
+
+.footer_app {
+	max-width: 500px
+}
+
+.vd {
+	transform: translate(0, 40px)
+}
+
+@media screen and (max-width:767px) {
+	.vd {
+		transform: translate(0, 0)
+	}
+}
+.vue-tel-input{
+	border: none !important;
+}
+button[type=submit]{
+	background: #fbaf41;
+	font-weight: bold;
+	color: #fff;
+}
+video{
+	object-fit: cover;
+}
+.play-btn{
+	height: 100%;
+}
+@media screen and (max-width: 768px){
+	.play-btn{
+		opacity: 1 !important;
+		display: flex !important;
+	}
+}

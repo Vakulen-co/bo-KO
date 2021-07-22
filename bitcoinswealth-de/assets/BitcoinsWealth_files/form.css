@@ -1,0 +1,486 @@
+.formLead2 .help-block {
+    display: none;
+}
+
+.formLead2 {
+    text-align: left;
+}
+
+.formLead2 span {
+    color: #de0900;
+}
+
+.formLead2 {
+    display: block;
+    width: 100%;
+    width: 260px;
+    font-family: "Lato", arial, sans-serif;
+}
+
+.formLead2 input,
+.formLead2 select {
+    height: 31px;
+    border: 1px solid #b8b7b7;
+    max-width: 100%;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #000000;
+    display: block;
+    background-color: white;
+}
+
+.formLead2 div {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formLead2 .fPrefix {
+    width: 37%;
+    margin-right: 3%;
+    float: left;
+}
+
+.formLead2 .fPhone {
+    width: 60%;
+    float: left;
+}
+
+.formLead2 .fTos .terms {
+    font-size: 11px;
+}
+
+.formLead2 .terms input {
+    height: 16px;
+    width: 16px;
+    margin: 0;
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.formLead2 .fEmail .fas.fa-question-circle {
+    position: absolute;
+    top: 8px;
+    left: 235px;
+}
+
+.formLead2 .fEmail {
+    margin-top: 70px;
+}
+
+.formLead2 .fPwd .fas.fa-question-circle {
+    position: absolute;
+    top: 8px;
+    left: 235px;
+}
+
+.formLead2 .concrete-bt {
+    background: #1eb60e;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    height: 72px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 3px;
+    border: 0;
+    /*    border-bottom: 5px solid;
+    border-bottom-color: #009007;*/
+}
+
+.formLead2 .concrete-bt:hover {
+    content: " ";
+    bottom: 0;
+    /*    background: #48b64e;
+    border-bottom-color: #00ad07;*/
+}
+
+.formLead2 .fFname,
+.formLead2 .fLname,
+.formLead2 .fCountry,
+.formLead2 .fPrefix,
+.formLead2 .fPhone,
+.formLead2 .fEmail,
+.formLead2 .fPwd,
+.formLead2 .fPwd2,
+.formLead2 .fCurrency,
+.formLead2 .fTos {
+    height: 31px;
+}
+
+.formLead2 .fTos {
+    margin-bottom: 5px !important;
+    margin-top: -3px;
+}
+
+[data-form-type="smallForm"] {
+    width: 260px;
+}
+
+[data-form-type="smallForm"] input {
+    height: 31px;
+    border: 1px solid #b8b7b7;
+    max-width: 100%;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #000000;
+    display: block;
+}
+
+[data-form-type="smallForm"] .formLead2 .fEmail {
+    margin-top: 0;
+}
+
+[data-form-type="smallForm"] div {
+    margin-bottom: 20px;
+}
+
+[data-horizontal-type="yes"] .formLead2 {
+    width: 100%;
+    width: 1000px;
+    display: inline-flex;
+}
+
+[data-horizontal-type="yes"] input,
+[data-horizontal-type="yes"] button {
+    width: 260px !important;
+    height: 41px !important;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+[data-horizontal-type="yes"] button {
+    font-size: 22.5px !important;
+}
+
+[data-horizontal-type="yes"] div {
+    margin-bottom: 0;
+}
+
+[data-horizontal-type="yes"] input {
+    border: 1px solid #b8b7b7;
+    max-width: 100%;
+    border-radius: 3px;
+    line-height: 20px;
+    padding: 6px;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+/*NEW POPUP*/
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('fonts/BebasNeue/BebasNeueBold.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/BebasNeue/BebasNeueBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/BebasNeue/BebasNeueBold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/BebasNeue/BebasNeueBold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/BebasNeue/BebasNeueBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,900&subset=cyrillic');*/
+
+/*@font-face {*/
+
+/*font-family: 'Montserrat';*/
+
+/*src: url("//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,900");*/
+
+/**/
+
+/*}*/
+
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url('fonts/Montserrat/Montserrat-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Regular.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Regular.svg') format('svg'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Montserrat_Bold';
+    src: url('fonts/Montserrat/Montserrat-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Bold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Bold.svg') format('svg'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Montserrat_Light';
+    src: url('fonts/Montserrat/Montserrat-Light.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Montserrat/Montserrat-Light.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Light.woff') format('woff'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Light.svg') format('svg'), /* Modern Browsers */
+    url('fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    text-rendering: optimizeLegibility;
+}
+
+::-webkit-input-placeholder {
+    font-family: Montserrat_Regular, sans-serif;
+}
+
+::-moz-placeholder {
+    font-family: Montserrat_Regular, sans-serif;
+}
+
+:-moz-placeholder {
+    font-family: Montserrat_Regular, sans-serif;
+}
+
+:-ms-input-placeholder {
+    font-family: Montserrat_Regular, sans-serif;
+}
+
+div#modal-poppp,
+div#modal-poppp2 {
+    display: inline-block;
+    /*width: 100%;*/
+    position: relative;
+}
+
+div#modal-poppp [data-form-type="pnoneVerify"] {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 25px;
+}
+
+div#modal-poppp [data-form-type="pnoneVerify"] .formLead.formLead2 {
+    display: inline-block;
+    width: 100%;
+}
+
+div#modal-poppp [data-form-type="pnoneVerify"] .formLead.formLead2 input,
+div#modal-poppp2 .checkSms {
+    height: 38px;
+    border: 2px solid #000;
+    border-radius: 0px;
+    position: relative;
+    z-index: 999;
+    outline: none;
+    display: inline-block;
+}
+
+div#modal-poppp2 input.checkSms {
+    padding: 0px 10px;
+    width: 75%;
+    display: inline-block;
+    color: #333;
+    text-align: center
+}
+
+div#modal-poppp2 .smsC {
+    padding: 0px 80px;
+    margin: 0px 0px 30px;
+}
+
+div#modal-poppp2 .fButton {
+    padding: 0px 80px;
+}
+
+div#modal-poppp [data-form-type="pnoneVerify"] .formLead.formLead2 .fButton {
+    margin: 5px 0px 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.modal-header-cstm-pp {
+    display: inline-block;
+    width: 100%;
+    padding: 0px 50px 0px;
+}
+
+.modal-content-cstm-pp {
+    /*background: url("bg_popup.png") no-repeat  center;*/
+    background: #FFF;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: calc(50vh + 7%);
+    transition: all 5s ease-in-out;
+    overflow: auto;
+    width: 35%;
+    height: 335px;
+}
+
+@media (max-width: 330px) {
+    .modal-content-cstm-pp {
+        top: 50px !important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .modal-content-cstm-pp {
+        top: 35%;
+        left: 0;
+        width: auto;
+        height: auto;
+        padding: 0px 0px 30px;
+    }
+    .modal-content-cstm-pp {
+        top: 30%;
+    }
+    h1.forms-modal-title-cstm-pp {
+        margin: 10px 0px 30px;
+    }
+    div#modal-poppp2 input.checkSms {
+        width: 100%;
+    }
+    #modal-poppp2 .sms_check,
+    #modal-poppp2 .sms_check:hover,
+    #modal-poppp2 .sms_check:focus,
+    #modal-poppp2 .sms_check:active {
+        width: 100%;
+    }
+    div#modal-poppp2 .smsC {
+        padding: 0px 40px;
+    }
+    div#modal-poppp2 .fButton {
+        padding: 0px 40px;
+    }
+    div#modal-poppp [data-form-type="pnoneVerify"] .formLead.formLead2 input,
+    div#modal-poppp2 .checkSms,
+    #modal-poppp2 .sms_check,
+    #modal-poppp2 .sms_check:hover,
+    #modal-poppp2 .sms_check:focus,
+    #modal-poppp2 .sms_check:active {
+        height: 50px;
+    }
+    #modal-poppp2 .sms_check,
+    #modal-poppp2 .sms_check:hover,
+    #modal-poppp2 .sms_check:focus,
+    #modal-poppp2 .sms_check:active {
+        width: 100% !important;
+    }
+    .modal-header-cstm-pp {
+        padding: 30px 20px 25px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .modal-content-cstm-pp {
+        left: 8%;
+        width: 85%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+    .modal-content-cstm-pp {
+        width: 65%;
+        left: 18%;
+        top: 25%;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .modal-content-cstm-pp {
+        width: 50%;
+        left: 25%;
+    }
+}
+
+.modal-dialog-cstm-pp.overlay {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99999999;
+}
+
+.modal-dialog-cstm-pp.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+a.cls-pp-cstm,
+a.cls-pp-cstm:hover,
+a.cls-pp-cstm:focus,
+a.cls-pp-cstm:active {
+    /*background: url("cls_popup.png");*/
+    /*font-family: "BebasNeueBold", sans-serif;*/
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    transition: all 200ms;
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    text-decoration: none !important;
+}
+
+h1.forms-modal-title-cstm-pp {
+    /*font-family: "Roboto Black","BebasNeueBold", sans-serif;*/
+    font-family: Montserrat_Bold, sans-serif !important;
+    font-size: 60px;
+    color: #ff0000;
+    padding: 0px;
+    margin: 10px 0px 10px;
+    font-weight: 700 !important;
+}
+
+h3.forms-modal-subtitle-cstm-pp {
+    font-family: Montserrat_Regular, "BebasNeueBold", sans-serif !important;
+    font-size: 18px;
+    color: #000000;
+    padding: 0px;
+    margin: 0px 0px 30px;
+    font-weight: normal !important;
+}
+
+div#modal-poppp [data-form-type="pnoneVerify"] .formLead.formLead2 .concrete-bt,
+#modal-poppp2 .sms_check {
+    /*background: #00cc66;*/
+    border-radius: 0px;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Montserrat_Regular, "BebasNeueBold", sans-serif !important;
+    padding: 10px 16px !important;
+    /*height: 38px;*/
+    outline: none;
+}
+
+#modal-poppp2 .sms_check,
+#modal-poppp2 .sms_check:hover,
+#modal-poppp2 .sms_check:focus,
+#modal-poppp2 .sms_check:active {
+    background: rgb(0, 204, 102);
+    text-align: center;
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    width: 60%;
+    border: 0;
+    font-weight: 900;
+}

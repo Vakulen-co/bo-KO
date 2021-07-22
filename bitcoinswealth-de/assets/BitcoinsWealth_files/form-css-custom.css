@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:300,300i,400,500,500i,700,700i&display=swap&subset=cyrillic');
+html,
+body {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html * {
+    max-height: 999999px;
+}
+
+img {
+    border: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both !important;
+    height: 0;
+}
+
+* html .clearfix {
+    position: relative;
+    zoom: 1;
+}
+
+*+html .clearfix {
+    position: relative;
+    zoom: 1;
+}
+
+a {
+    transition: all 0.3s;
+    outline: 0;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+}
+
+.fontawesome {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ubuntu-condenced {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bodyfont {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.bodyfont {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.error-summary ul {
+    margin-bottom: 0;
+}
+
+.form-container-unique {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 0;
+}
+
+.form-container-unique .form-group {
+    margin-bottom: 10px;
+}
+
+.form-container-unique .form-control {
+    box-shadow: none;
+    border: 1px solid #E6E6E6;
+    background-color: #E6E6E6;
+    height: 44px;
+    font-weight: 300;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-container-unique .form-actions {
+    position: relative;
+    margin-top: 15px;
+}
+
+.form-container-unique .form-actions:after {
+    display: none;
+}
+
+.form-container-unique .form-actions .register-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    padding: 29px 5px 29px 50px;
+    white-space: nowrap;
+    line-height: 1;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: none;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    transition: all 0.3s;
+    border: solid 1px #df7a00;
+    border-radius: 5px;
+    background-color: #f08a0d;
+    background-image: linear-gradient(to top, #e98000 0%, #f7931a 100%);
+    font-size: 30px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width : 767px) {
+    .form-container-unique .form-actions .register-btn {
+        font-size: 18px;
+        text-align: left;
+        padding: 20px 5px 20px 50px;
+    }
+}
+
+.form-container-unique .form-actions .register-btn:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background: url(../../img/icon-b.png) 0 0 no-repeat;
+    width: 39px;
+    height: 49px;
+}
+
+@media screen and (max-width : 767px) {
+    .form-container-unique .form-actions .register-btn:before {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        left: 20px;
+    }
+}
+
+.form-container-unique .form-actions .register-btn:hover {
+    color: #fff;
+    background-color: #c06e0a;
+    background-image: linear-gradient(to bottom, #e98000 0%, #f7931a 100%);
+}
+
+.form-container-unique .form-actions .register-btn:focus,
+.form-container-unique .form-actions .register-btn.focus,
+.form-container-unique .form-actions .register-btn:active,
+.form-container-unique .form-actions .register-btn.active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-container-unique .form-actions .register-btn:after {
+    display: none;
+}
+
+.member-form {
+    margin-top: 0;
+}
+
+.member-form .form-container-unique .title {
+    display: none;
+}
+
+.member-form .form-container-unique .form-group {
+    margin-bottom: 8px;
+}
+
+.member-form .form-container-unique .form-control {
+    height: 44px;
+}
+
+.member-form .form-container-unique .form-actions {
+    margin-top: 0;
+}
+
+.member-form .form-container-unique .form-actions .register-btn {
+    padding: 24px 15px 24px 50px;
+    text-transform: capitalize;
+}
+
+.scroll-form .form-container-unique {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: 0;
+    max-width: none;
+    margin-right: -10px;
+}
+
+.scroll-form .form-container-unique .title {
+    display: none;
+}
+
+.scroll-form .form-container-unique:before,
+.scroll-form .form-container-unique:after {
+    content: " ";
+    display: table;
+}
+
+.scroll-form .form-container-unique:after {
+    clear: both !important;
+    height: 0;
+}
+
+* html .scroll-form .form-container-unique {
+    position: relative;
+    zoom: 1;
+}
+
+*+html .scroll-form .form-container-unique {
+    position: relative;
+    zoom: 1;
+}
+
+.scroll-form .form-container-unique a {
+    color: #ffffff;
+}
+
+.scroll-form .form-container-unique .form-actions {
+    float: left;
+    width: 100%;
+    max-width: 330px;
+    margin-left: 6px;
+    margin-right: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.scroll-form .form-container-unique .form-actions .register-btn {
+    padding: 5px 15px 8px 55px;
+    text-transform: capitalize;
+}
+
+.scroll-form .form-container-unique .form-group {
+    float: left;
+    width: 100%;
+    max-width: 330px;
+    margin-right: 6px;
+}
+
+.scroll-form .form-container-unique .row {
+    float: left;
+    max-width: 336px;
+}
+
+.scroll-form .form-container-unique .row .form-group {
+    max-width: none;
+}

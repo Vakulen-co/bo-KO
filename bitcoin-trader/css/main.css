@@ -1,0 +1,218 @@
+.l_form h4 {
+    display: none
+}
+
+#home {
+    background-image: url("../img/funnel-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.special {
+    color: rgb(0, 197, 0);
+}
+
+#home.content {
+    color: white
+}
+
+.wl-login h4,
+.wl-signup h2 {
+    color: rgb(238, 189, 30)
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32)
+}
+
+.header-inverse {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32)
+}
+
+a.header {
+    color: rgb(32, 32, 32)
+}
+
+.menu {
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32)
+}
+
+.menu-inverse {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 32)
+}
+
+a.menu {
+    color: rgb(32, 32, 32)
+}
+
+.title {
+    background-color: rgb(32, 32, 32);
+    color: #FFFFFF
+}
+
+.title-inverse {
+    color: rgb(32, 32, 32);
+    background-color: #FFFFFF
+}
+
+a.title {
+    color: #FFFFFF
+}
+
+.content {
+    background-color: #FFFFFF;
+    color: #333333
+}
+
+.content-inverse {
+    color: #FFFFFF;
+    background-color: #333333
+}
+
+a.content {
+    color: #333333
+}
+
+.highlight {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF
+}
+
+.highlight-inverse {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: #FFFFFF
+}
+
+a.highlight {
+    color: #FFFFFF
+}
+
+.text-default {
+    color: #EFEFEF
+}
+
+.btn-default {
+    background-color: #EFEFEF;
+    color: #444444
+}
+
+.btn-default-inverse {
+    color: #EFEFEF;
+    background-color: #444444
+}
+
+a.btn-default {
+    color: #444444
+}
+
+.text-primary {
+    color: rgb(0, 197, 0)
+}
+
+.btn-primary {
+    background-color: rgb(0, 197, 0);
+    color: #FFFFFF
+}
+
+.btn-primary-inverse {
+    color: rgb(0, 197, 0);
+    background-color: #FFFFFF
+}
+
+a.btn-primary {
+    color: #FFFFFF
+}
+
+.text-success {
+    color: rgb(0, 197, 0)
+}
+
+.btn-success {
+    background-color: rgb(0, 197, 0);
+    color: #FFFFFF
+}
+
+.btn-success-inverse {
+    color: rgb(0, 197, 0);
+    background-color: #FFFFFF
+}
+
+a.btn-success {
+    color: #FFFFFF
+}
+
+.text-danger {
+    color: #e74c3c
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #FFFFFF
+}
+
+.btn-danger-inverse {
+    color: #e74c3c;
+    background-color: #FFFFFF
+}
+
+a.btn-danger {
+    color: #FFFFFF
+}
+
+.text-warning {
+    color: rgb(0, 197, 0)
+}
+
+.btn-warning {
+    background-color: rgb(0, 197, 0);
+    color: #FFFFFF
+}
+
+.btn-warning-inverse {
+    color: rgb(0, 197, 0);
+    background-color: #FFFFFF
+}
+
+a.btn-warning {
+    color: #FFFFFF
+}
+
+.text-info {
+    color: rgb(32, 32, 32)
+}
+
+.btn-info {
+    background-color: rgb(32, 32, 32);
+    color: rgb(0, 197, 0)
+}
+
+.btn-info-inverse {
+    color: rgb(32, 32, 32);
+    background-color: rgb(0, 197, 0)
+}
+
+a.btn-info {
+    color: rgb(0, 197, 0)
+}
+
+.wl-signup h4 {
+    text-transform: uppercase;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.wl-modal .header {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+#modal-terms,
+#modal-privacy {
+    display: none;
+}
