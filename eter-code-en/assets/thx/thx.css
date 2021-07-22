@@ -1,0 +1,72 @@
+.thx {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #000;
+    background: url(congrats-bg.jpg) center / cover no-repeat;
+    z-index: 99999;
+    font-family: sans-serif;
+}
+.thx__container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thx__box {
+    background: #05072C;
+    padding: 10px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 16px 15px rgba(0,0,0, .16);
+    min-width: 250px;
+    max-width: 650px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thx-left .thx-left__title {
+    font-size: 21px;
+    color: #fff;
+    margin: 0 auto 10px;
+}
+
+.thx-left .thx-left__text {
+    font-size: 14px;
+    color: #fff;
+}
+
+.thx-right__item-1 {
+    text-align: center;
+}
+.thx-right__item-1 img {
+    transition: 1.5s;
+}
+.thx-right__item-2 {
+    width: 100%;
+    height: 100%;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 580px) {
+    .thx__box {
+        height: auto;
+        padding: 40px;
+    }
+}
